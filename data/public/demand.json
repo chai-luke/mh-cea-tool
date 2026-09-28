@@ -1,0 +1,441 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-Demand"
+ },
+ "funnel": [
+  {
+   "country": "Ethiopia",
+   "adultPop": 68121511,
+   "prevalence": 0.0044,
+   "schizShareOfPsychosis": 0.76,
+   "diagnosisRateSq": 0.4693,
+   "txInitRateSq": 0.33,
+   "retentionSq": 0.317,
+   "goalCoverageTarget": 0.7,
+   "currentBudgetUsd": null,
+   "sqMedCostUsd": 160871.67,
+   "source": "Demand Model v4-updated — Ethiopia tab (B24 diagnosis = TWG draft-MH-Strategy treatment-coverage estimate used as diagnosis-rate proxy; budget = CDSS antipsychotic-scoped forecast, FX restated 2026-08-19)",
+   "budgetScopeVerified": "Yes",
+   "treatedRetainedSq": 19362,
+   "treatedRetainedGoal": 276071,
+   "fundingRatePerPy": 4,
+   "note": "Demand Estimate Model v4"
+  },
+  {
+   "country": "Nigeria",
+   "adultPop": 114423765,
+   "prevalence": 0.0046,
+   "schizShareOfPsychosis": 0.76,
+   "diagnosisRateSq": 0.15,
+   "txInitRateSq": 0.4,
+   "retentionSq": 0.317,
+   "goalCoverageTarget": 0.4,
+   "currentBudgetUsd": 48600000,
+   "sqMedCostUsd": 1234022.88,
+   "source": "Demand Model v4-updated — Nigeria tab. CURRENT BUDGET (J): scope unstated / not antipsychotic-scoped; to be confirmed with the demand-model team.",
+   "budgetScopeVerified": "No",
+   "treatedRetainedSq": null,
+   "treatedRetainedGoal": null,
+   "fundingRatePerPy": null,
+   "note": "Demand-model reference rows not yet available for this country"
+  },
+  {
+   "country": "Rwanda",
+   "adultPop": 7582203,
+   "prevalence": 0.0044,
+   "schizShareOfPsychosis": 0.76,
+   "diagnosisRateSq": 0.05,
+   "txInitRateSq": 0.4,
+   "retentionSq": 0.317,
+   "goalCoverageTarget": 0.3,
+   "currentBudgetUsd": 67813733.22,
+   "sqMedCostUsd": 1636.39,
+   "source": "Demand Model v4-updated — Rwanda tab. CURRENT BUDGET (J): scope/currency irreconcilable with an antipsychotic line (41,000× the SQ med cost); to be confirmed with the demand-model team.",
+   "budgetScopeVerified": "No",
+   "treatedRetainedSq": null,
+   "treatedRetainedGoal": null,
+   "fundingRatePerPy": null,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "adultPop": 42654339,
+   "prevalence": 0.0046,
+   "schizShareOfPsychosis": 0.76,
+   "diagnosisRateSq": 0.109,
+   "txInitRateSq": 0.4,
+   "retentionSq": 0.317,
+   "goalCoverageTarget": 0.42,
+   "currentBudgetUsd": 360000000,
+   "sqMedCostUsd": 304318.56,
+   "source": "Demand Model v4-updated — South Africa tab. CURRENT BUDGET (J): scope unstated (source note says \"2016/2027\"); to be confirmed with the demand-model team. SQ MED COST (K): understated ~18% — source med split sums to 0.818.",
+   "budgetScopeVerified": "No",
+   "treatedRetainedSq": null,
+   "treatedRetainedGoal": null,
+   "fundingRatePerPy": null,
+   "note": null
+  },
+  {
+   "country": "Ghana",
+   "adultPop": 17000000,
+   "prevalence": 0.0044,
+   "schizShareOfPsychosis": 0.76,
+   "diagnosisRateSq": 0.1,
+   "txInitRateSq": 0.4,
+   "retentionSq": 0.317,
+   "goalCoverageTarget": 0.5,
+   "currentBudgetUsd": null,
+   "sqMedCostUsd": null,
+   "source": "Carried-over regional defaults — NOT in demand model (no Ghana tab exists; CHAI agreed 2026-07-30 to build one). Current budget & Status-Quo med cost pending.",
+   "budgetScopeVerified": "No",
+   "treatedRetainedSq": null,
+   "treatedRetainedGoal": null,
+   "fundingRatePerPy": null,
+   "note": null
+  }
+ ],
+ "mixDefaults": [
+  {
+   "country": "Ethiopia",
+   "useCategory": "Initiation + maintenance",
+   "product": "Risperidone (oral)",
+   "rawShare": 0.568,
+   "normalizedShare": 0.5674325674325674,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Initiation + maintenance",
+   "product": "Chlorpromazine (oral)",
+   "rawShare": 0.173,
+   "normalizedShare": 0.17282717282717283,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Initiation + maintenance",
+   "product": "Olanzapine (oral)",
+   "rawShare": 0.154,
+   "normalizedShare": 0.15384615384615385,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Initiation + maintenance",
+   "product": "Haloperidol (oral)",
+   "rawShare": 0.104,
+   "normalizedShare": 0.1038961038961039,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Initiation + maintenance",
+   "product": "Trifluoperazine (oral)",
+   "rawShare": 0.002,
+   "normalizedShare": 0.0019980019980019984,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Maintenance",
+   "product": "Fluphenazine decanoate (LAI)",
+   "rawShare": 0.906,
+   "normalizedShare": 0.906,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Maintenance",
+   "product": "Haloperidol decanoate (LAI)",
+   "rawShare": 0.094,
+   "normalizedShare": 0.094,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Treatment-resistant",
+   "product": "Clozapine (oral)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": null
+  },
+  {
+   "country": "Ethiopia",
+   "useCategory": "Acute agitation",
+   "product": "Haloperidol (IM, short-acting)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": "ET SAI shares mapped to the acute category"
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Initiation + maintenance",
+   "product": "Risperidone (oral)",
+   "rawShare": 0.509,
+   "normalizedShare": 0.5095095095095095,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Initiation + maintenance",
+   "product": "Olanzapine (oral)",
+   "rawShare": 0.178,
+   "normalizedShare": 0.17817817817817816,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Initiation + maintenance",
+   "product": "Haloperidol (oral)",
+   "rawShare": 0.108,
+   "normalizedShare": 0.1081081081081081,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Initiation + maintenance",
+   "product": "Aripiprazole (oral)",
+   "rawShare": 0.099,
+   "normalizedShare": 0.09909909909909909,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Initiation + maintenance",
+   "product": "Trifluoperazine (oral)",
+   "rawShare": 0.056,
+   "normalizedShare": 0.05605605605605605,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Initiation + maintenance",
+   "product": "Chlorpromazine (oral)",
+   "rawShare": 0.049,
+   "normalizedShare": 0.04904904904904905,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Maintenance",
+   "product": "Fluphenazine decanoate (LAI)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": null
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Treatment-resistant",
+   "product": "Clozapine (oral)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": "no NG share in the demand model — cabinet default"
+  },
+  {
+   "country": "Nigeria",
+   "useCategory": "Acute agitation",
+   "product": "Haloperidol (IM, short-acting)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": "no NG acute share — cabinet default mapping"
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Initiation + maintenance",
+   "product": "Olanzapine (oral)",
+   "rawShare": 0.407,
+   "normalizedShare": 0.407,
+   "note": null
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Initiation + maintenance",
+   "product": "Risperidone (oral)",
+   "rawShare": 0.225,
+   "normalizedShare": 0.225,
+   "note": null
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Initiation + maintenance",
+   "product": "Haloperidol (oral)",
+   "rawShare": 0.211,
+   "normalizedShare": 0.211,
+   "note": null
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Initiation + maintenance",
+   "product": "Chlorpromazine (oral)",
+   "rawShare": 0.157,
+   "normalizedShare": 0.157,
+   "note": null
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Maintenance",
+   "product": "Fluphenazine decanoate (LAI)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": null
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Treatment-resistant",
+   "product": "Clozapine (oral)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": "no RW share — cabinet default"
+  },
+  {
+   "country": "Rwanda",
+   "useCategory": "Acute agitation",
+   "product": "Haloperidol (IM, short-acting)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": "no RW acute share — cabinet default mapping"
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Initiation + maintenance",
+   "product": "Risperidone (oral)",
+   "rawShare": 0.553,
+   "normalizedShare": 0.5535535535535535,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Initiation + maintenance",
+   "product": "Chlorpromazine (oral)",
+   "rawShare": 0.17,
+   "normalizedShare": 0.17017017017017017,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Initiation + maintenance",
+   "product": "Olanzapine (oral)",
+   "rawShare": 0.146,
+   "normalizedShare": 0.14614614614614613,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Initiation + maintenance",
+   "product": "Trifluoperazine (oral)",
+   "rawShare": 0.071,
+   "normalizedShare": 0.07107107107107105,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Initiation + maintenance",
+   "product": "Amisulpride (oral)",
+   "rawShare": 0.057,
+   "normalizedShare": 0.057057057057057055,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Initiation + maintenance",
+   "product": "Aripiprazole (oral)",
+   "rawShare": 0.002,
+   "normalizedShare": 0.002002002002002002,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Maintenance",
+   "product": "Zuclopenthixol decanoate (LAI)",
+   "rawShare": 0.774,
+   "normalizedShare": 0.774,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Maintenance",
+   "product": "Flupenthixol decanoate (LAI)",
+   "rawShare": 0.198,
+   "normalizedShare": 0.198,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Maintenance",
+   "product": "Risperidone (LAI)",
+   "rawShare": 0.028,
+   "normalizedShare": 0.028,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Treatment-resistant",
+   "product": "Clozapine (oral)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": null
+  },
+  {
+   "country": "South Africa",
+   "useCategory": "Acute agitation",
+   "product": "Haloperidol (IM, short-acting)",
+   "rawShare": 1,
+   "normalizedShare": 1,
+   "note": "SA STG acute agents not all modeled"
+  }
+ ],
+ "acuteAssumptions": [
+  {
+   "parameter": "Relapses per treated patient-year",
+   "value": 0.25,
+   "low": 0.15,
+   "high": 0.35,
+   "source": "Leucht 2012 Lancet (27% at 7–12 mo); Ascher-Svanum 2010; SW Ethiopia 2016 IJMHS (24.6%/6 mo); Phanthunane 2011"
+  },
+  {
+   "parameter": "Relapses per untreated patient-year",
+   "value": 0.64,
+   "low": 0.5,
+   "high": 0.82,
+   "source": "Leucht 2012 placebo 64%; Robinson 1999"
+  },
+  {
+   "parameter": "Share of relapses reaching facility crisis care",
+   "value": 0.6,
+   "low": 0.4,
+   "high": 0.9,
+   "source": "Alvarez-Jimenez 2012; Ascher-Svanum 2010; SA MH Investment Case 2021 (15% acute admissions per treated case-year)"
+  },
+  {
+   "parameter": "Acute episodes requiring crisis care per treated patient-year (DERIVED)",
+   "value": 0.15,
+   "low": null,
+   "high": null,
+   "source": "= relapses per treated patient-year × share reaching facility crisis care. Feeds the BIA acute-category share default (Control P_BIA_SPLIT_4, value unchanged at 0.15 — now sourced)."
+  },
+  {
+   "parameter": "Share of crisis presentations receiving IM rapid tranquillisation",
+   "value": 0.4,
+   "low": 0.2,
+   "high": 0.6,
+   "source": "POMH-UK via Cookson 2018; Paton 2019"
+  },
+  {
+   "parameter": "IM haloperidol 5 mg doses per episode",
+   "value": 3,
+   "low": 1,
+   "high": 8,
+   "source": "SmPC emc/514; TREC-Rio 2 Huf 2007; TREC-India Raveendran 2007"
+  },
+  {
+   "parameter": "Derived IM ampoules per treated patient-year (DERIVED)",
+   "value": 0.18,
+   "low": 0.02,
+   "high": 1,
+   "source": "= acute episodes × IM share × doses per episode. Evidence-derived COHORT figure. The engine's '20 doses per acute-care patient-year' (Src-Med Costs col K, amber) is a different quantity — doses per patient-year INSIDE the acute-care category — and is a stated assumption pending the parked acute redesign; acute-category results are indicative only."
+  }
+ ]
+}

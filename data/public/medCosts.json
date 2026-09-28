@@ -1,0 +1,3206 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-Med Costs",
+  "priceSources": "Added 17 Sep 2026 (tools/apply_price_sources_2026-09-17.py). Default = highest tier, then priority; selectedSource null = default. Mirrors the workbook tab 'Src-Med Price Sources' once the vS.1 prompt has run.",
+  "priceSourcesNote": "Tier protocol unchanged: T1 in-country procurement -> T2 India I/E -> T3 focus-country proxy -> T4 country-adjusted global benchmark."
+ },
+ "selectedBasis": "Cheapest",
+ "frequencyPerYear": {
+  "Daily": 365,
+  "Twice daily": 730,
+  "Weekly": 52,
+  "Two-weekly": 26,
+  "Monthly": 12,
+  "Three-monthly": 4,
+  "Acute (PRN)": 20
+ },
+ "medCosts": [
+  {
+   "intId": "SCZ-01",
+   "name": "Haloperidol (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": null,
+   "injectable": "No",
+   "strengthMg": 5,
+   "doseMg": 5,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 365,
+   "dosingSource": "WHO mhGAP-IG v2.0, p.75",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.010171392745505294,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 0.1625,
+   "otherDefaultSource": "SA SEP generic median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "AMD  Tender (2023-2025)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.010171392745505294,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.010171392745505294,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.010171392745505294,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "AMD  Tender (2023-2025)",
+      "tier": "T1",
+      "priceUsd": 0.010171392745505294,
+      "unit": null,
+      "ref": "AMD  Tender (2023-2025)",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-02",
+   "name": "Chlorpromazine (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "300mg daily (3x100mg) (WHO mhGAP: 75-300mg/day)",
+   "injectable": "No",
+   "strengthMg": 100,
+   "doseMg": 200,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 2,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 730,
+   "dosingSource": "WHO mhGAP-IG v2.0, p.75",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.08079416452380953,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 0.5833,
+   "otherDefaultSource": "SA SEP generic median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "AMD  Tender (2023-2025)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.08079416452380953,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.08079416452380953,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.08079416452380953,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "AMD  Tender (2023-2025)",
+      "tier": "T1",
+      "priceUsd": 0.08079416452380953,
+      "unit": null,
+      "ref": "AMD  Tender (2023-2025)",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-03",
+   "name": "Risperidone (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "4mg daily (2x2mg) (WHO mhGAP: 2-6mg/day)",
+   "injectable": "No",
+   "strengthMg": 2,
+   "doseMg": 4,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 2,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 730,
+   "dosingSource": "WHO mhGAP-IG v2.0, p.75",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.0096,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 1.726,
+   "otherDefaultSource": "SA SEP generic median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "SA tender HP09-2023SD"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.0096,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP09-2023SD",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.0096,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP09-2023SD",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.0096,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP09-2023SD",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "sa-hp09-2023sd",
+      "label": "SA tender HP09-2023SD",
+      "tier": "T1",
+      "priceUsd": 0.0096,
+      "unit": "per 2mg oral tablet",
+      "ref": "SA public-sector tender HP09-2023SD (Contract Circular 7 Feb 2023; Add-193 replacement circular 15 Sep 2025)",
+      "note": "R4.97 per pack of 28 = R0.1775/tablet at 18.45 ZAR/USD. CHAI pricing review, 16 Sep 2026. Replaces the T3 mean of the ET/NG/RW figures.",
+      "priority": 1,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-04",
+   "name": "Olanzapine (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "10mg once daily (WHO mhGAP: 5-20mg/day)",
+   "injectable": "No",
+   "strengthMg": 10,
+   "doseMg": 10,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 365,
+   "dosingSource": "WHO mhGAP-IG v2.0, p.75",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.0229,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 1.1022,
+   "otherDefaultSource": "SA SEP generic median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "SA tender HP09-2023SD line 239"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.0229,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP09-2023SD line 239",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.0229,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP09-2023SD line 239",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.0229,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP09-2023SD line 239",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "sa-hp09-2023sd",
+      "label": "SA tender HP09-2023SD line 239",
+      "tier": "T1",
+      "priceUsd": 0.0229,
+      "unit": "per 10mg oral tablet",
+      "ref": "SA public-sector tender HP09-2023SD (Contract Circular 7 Feb 2023; Add-193 replacement circular 15 Sep 2025)",
+      "note": "R11.83 per pack of 28 = R0.4225/tablet at 18.45 ZAR/USD. CHAI pricing review, 16 Sep 2026. Supersedes the 2021-round price carried as 'AMD Tender (2023-2025)'.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "SA public-sector tender HP09-2021SD (Contract Circular 24 Feb 2021) (R22.43/28; 2021 round, superseded)",
+      "tier": "T1",
+      "priceUsd": 0.05642050595238095,
+      "unit": null,
+      "ref": "AMD  Tender (2023-2025)",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 9,
+      "default": false
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-05",
+   "name": "Quetiapine (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "400mg daily (2x200mg) (range 150-750mg/day)",
+   "injectable": "No",
+   "strengthMg": 200,
+   "doseMg": 400,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 2,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 730,
+   "dosingSource": "FDA label; Seroquel PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.042383738222222224,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 0.6555,
+   "otherDefaultSource": "SA SEP generic median (IR)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "AMD  Tender (2023-2025)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.042383738222222224,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.042383738222222224,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 0.042383738222222224,
+      "unit": null,
+      "ref": "Mean of South Africa: AMD  Tender (2023-2025)",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "AMD  Tender (2023-2025)",
+      "tier": "T1",
+      "priceUsd": 0.042383738222222224,
+      "unit": null,
+      "ref": "AMD  Tender (2023-2025)",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-06",
+   "name": "Clozapine (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "300mg daily (3x100mg) (range 200-450mg/day)",
+   "injectable": "No",
+   "strengthMg": 100,
+   "doseMg": 300,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 3,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 1095,
+   "dosingSource": "WHO mhGAP-IG v2.0, p.75",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 0.9765,
+   "otherDefaultSource": "SA SEP generic median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Global benchmark: SA SEP generic median"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Global benchmark: SA SEP generic median"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Global benchmark: SA SEP generic median"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Global benchmark: SA SEP generic median"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark: SA SEP generic median",
+      "tier": "T4",
+      "priceUsd": 0.9765,
+      "unit": null,
+      "ref": "SA SEP generic median",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark: SA SEP generic median",
+      "tier": "T4",
+      "priceUsd": 0.9765,
+      "unit": null,
+      "ref": "SA SEP generic median",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark: SA SEP generic median",
+      "tier": "T4",
+      "priceUsd": 0.9765,
+      "unit": null,
+      "ref": "SA SEP generic median",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark: SA SEP generic median",
+      "tier": "T4",
+      "priceUsd": 0.9765,
+      "unit": null,
+      "ref": "SA SEP generic median",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-07",
+   "name": "Flupenthixol decanoate (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "20mg/ml monthly injection (12 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 20,
+   "doseMg": 40,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 2,
+   "adminsPerYrCached": 12,
+   "annualUnitsCached": 24,
+   "dosingSource": "SA IC Appendix A, Int. 17",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 2.3562,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 2.3562,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 2.3562,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 2.3562,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 11.2469,
+   "otherDefaultSource": "SA SEP (Fluanxol Depot)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "SA tender HP06-2024SVP/01 (proxy)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "SA tender HP06-2024SVP/01 (proxy)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "SA tender HP06-2024SVP/01 (proxy)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "SA tender HP06-2024SVP/01"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "sa-hp06-2024svp01",
+      "label": "SA tender HP06-2024SVP/01 (proxy)",
+      "tier": "T3",
+      "priceUsd": 2.3562,
+      "unit": "per 20mg/ml ampoule",
+      "ref": "SA public-sector tender HP06-2024SVP/01 (Contract Circular 1 Nov 2024)",
+      "note": "R43.19 per 1ml ampoule at 18.33 ZAR/USD. CHAI pricing review, 16 Sep 2026. The prior figure was a country-adjusted SA SEP benchmark ($1.10 SEP x country ratio), which sat below the tendered price.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.19941749805251635,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "sa-hp06-2024svp01",
+      "label": "SA tender HP06-2024SVP/01 (proxy)",
+      "tier": "T3",
+      "priceUsd": 2.3562,
+      "unit": "per 20mg/ml ampoule",
+      "ref": "SA public-sector tender HP06-2024SVP/01 (Contract Circular 1 Nov 2024)",
+      "note": "R43.19 per 1ml ampoule at 18.33 ZAR/USD. CHAI pricing review, 16 Sep 2026. The prior figure was a country-adjusted SA SEP benchmark ($1.10 SEP x country ratio), which sat below the tendered price.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.21677797332112833,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "sa-hp06-2024svp01",
+      "label": "SA tender HP06-2024SVP/01 (proxy)",
+      "tier": "T3",
+      "priceUsd": 2.3562,
+      "unit": "per 20mg/ml ampoule",
+      "ref": "SA public-sector tender HP06-2024SVP/01 (Contract Circular 1 Nov 2024)",
+      "note": "R43.19 per 1ml ampoule at 18.33 ZAR/USD. CHAI pricing review, 16 Sep 2026. The prior figure was a country-adjusted SA SEP benchmark ($1.10 SEP x country ratio), which sat below the tendered price.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.13241361242553243,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "sa-hp06-2024svp01",
+      "label": "SA tender HP06-2024SVP/01",
+      "tier": "T1",
+      "priceUsd": 2.3562,
+      "unit": "per 20mg/ml ampoule",
+      "ref": "SA public-sector tender HP06-2024SVP/01 (Contract Circular 1 Nov 2024)",
+      "note": "R43.19 per 1ml ampoule at 18.33 ZAR/USD. CHAI pricing review, 16 Sep 2026. The prior figure was a country-adjusted SA SEP benchmark ($1.10 SEP x country ratio), which sat below the tendered price.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.1703290408748574,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-08",
+   "name": "Risperidone (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "37.5mg biweekly (26 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 37.5,
+   "doseMg": 37.5,
+   "frequency": "Two-weekly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 26,
+   "annualUnitsCached": 26,
+   "dosingSource": "FDA label; Risperdal Consta PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 36.484775097105725,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 39.66099103572597,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 24.22596269796051,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 31.162845836067714,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 195.707,
+   "otherDefaultSource": "SA SEP (Risperdal Consta)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 36.484775097105725,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 39.66099103572597,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 24.22596269796051,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 31.162845836067714,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-09",
+   "name": "Paliperidone palmitate (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "150mg monthly (12 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 150,
+   "doseMg": 100,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 12,
+   "annualUnitsCached": 12,
+   "dosingSource": "FDA label; Invega Sustenna PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 663.4673,
+   "otherDefaultSource": "SA SEP (Xeplion)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Brazil CMED generic ceiling price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Brazil CMED generic ceiling price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Brazil CMED generic ceiling price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Brazil CMED generic ceiling price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "brazil-cmed",
+      "label": "Brazil CMED generic ceiling price",
+      "tier": "T4",
+      "priceUsd": 173.65,
+      "unit": "per 150mg LAI injection",
+      "ref": "ANVISA CMED price list (generic ceiling), https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "note": "CHAI pricing review, 16 Sep 2026. Global benchmark, not country-adjusted. Under the tier protocol it does not displace the in-country (NG, T1) or focus-country-proxy (ET/RW/SA, T3) figure; select it here to run that scenario.",
+      "priority": 1,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "brazil-cmed",
+      "label": "Brazil CMED generic ceiling price",
+      "tier": "T4",
+      "priceUsd": 173.65,
+      "unit": "per 150mg LAI injection",
+      "ref": "ANVISA CMED price list (generic ceiling), https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "note": "CHAI pricing review, 16 Sep 2026. Global benchmark, not country-adjusted. Under the tier protocol it does not displace the in-country (NG, T1) or focus-country-proxy (ET/RW/SA, T3) figure; select it here to run that scenario.",
+      "priority": 1,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "brazil-cmed",
+      "label": "Brazil CMED generic ceiling price",
+      "tier": "T4",
+      "priceUsd": 173.65,
+      "unit": "per 150mg LAI injection",
+      "ref": "ANVISA CMED price list (generic ceiling), https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "note": "CHAI pricing review, 16 Sep 2026. Global benchmark, not country-adjusted. Under the tier protocol it does not displace the in-country (NG, T1) or focus-country-proxy (ET/RW/SA, T3) figure; select it here to run that scenario.",
+      "priority": 1,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "brazil-cmed",
+      "label": "Brazil CMED generic ceiling price",
+      "tier": "T4",
+      "priceUsd": 173.65,
+      "unit": "per 150mg LAI injection",
+      "ref": "ANVISA CMED price list (generic ceiling), https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "note": "CHAI pricing review, 16 Sep 2026. Global benchmark, not country-adjusted. Under the tier protocol it does not displace the in-country (NG, T1) or focus-country-proxy (ET/RW/SA, T3) figure; select it here to run that scenario.",
+      "priority": 1,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-10",
+   "name": "Cobenfy (KarXT)",
+   "formulation": "oral capsule",
+   "dosingGuideline": "Xanomeline 125mg/trospium 30mg BID",
+   "injectable": "No",
+   "strengthMg": 1,
+   "doseMg": 1,
+   "frequency": "Twice daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 730,
+   "annualUnitsCached": 730,
+   "dosingSource": "FDA label; ICER 2024 Report",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 5.478516632045681,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 5.9554539792099765,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 3.637745860152597,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 4.679381159959949,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 29.728,
+   "otherDefaultSource": "US NADAC (no SA)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 5.478516632045681,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 5.9554539792099765,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 3.637745860152597,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 4.679381159959949,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-11",
+   "name": "Olanzapine (IM, short-acting)",
+   "formulation": "IM injection",
+   "dosingGuideline": "10mg IM PRN — IM doses per acute-care patient-year (20) = STATED ASSUMPTION pending acute redesign; evidence-derived cohort figure 0.18 ampoules per treated patient-year (Src-Demand rows 55–63)",
+   "injectable": "Yes",
+   "strengthMg": 10,
+   "doseMg": 10,
+   "frequency": "Acute (PRN)",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 20,
+   "annualUnitsCached": 20,
+   "dosingSource": "FDA label; Zyprexa Relprevv PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 1.9039228017060545,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 2.0696705672489757,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 1.264208499330624,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 1.6262030558068747,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 8.7529,
+   "otherDefaultSource": "SA SEP (Prexolan IM, generic)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 1.9039228017060545,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 2.0696705672489757,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 1.264208499330624,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 1.6262030558068747,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-12",
+   "name": "Olanzapine (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "300mg/2wk or 405mg/4wk depot (Zyprexa Relprevv)",
+   "injectable": "Yes",
+   "strengthMg": 300,
+   "doseMg": 300,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 26,
+   "annualUnitsCached": 26,
+   "dosingSource": "FDA label",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 54.90203892596927,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 59.6815868506938,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 36.45506224233293,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 46.893636334118234,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 912.22,
+   "otherDefaultSource": "US retail, low confidence (no SA/NADAC)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 54.90203892596927,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 59.6815868506938,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 36.45506224233293,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 46.893636334118234,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-13",
+   "name": "Aripiprazole (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "15mg once daily (range 10-30mg/day)",
+   "injectable": "No",
+   "strengthMg": 15,
+   "doseMg": 15,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 365,
+   "dosingSource": "WHO mhGAP",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 0.0705,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 0.0705,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 0.0705,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.0705,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 1.5194,
+   "otherDefaultSource": "SA SEP generic median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "SA tender HP09-2023SD (proxy)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "SA tender HP09-2023SD (proxy)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "SA tender HP09-2023SD (proxy)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "SA tender HP09-2023SD"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "sa-hp09-2023sd",
+      "label": "SA tender HP09-2023SD (proxy)",
+      "tier": "T3",
+      "priceUsd": 0.0705,
+      "unit": "per 15mg oral tablet",
+      "ref": "SA public-sector tender HP09-2023SD (Contract Circular 7 Feb 2023; Add-193 replacement circular 15 Sep 2025)",
+      "note": "R39.00 per pack of 30 = R1.30/tablet at 18.45 ZAR/USD. CHAI pricing review, 16 Sep 2026. Used as a focus-country proxy: no in-country procurement record.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.36322077848278633,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "sa-hp09-2023sd",
+      "label": "SA tender HP09-2023SD (proxy)",
+      "tier": "T3",
+      "priceUsd": 0.0705,
+      "unit": "per 15mg oral tablet",
+      "ref": "SA public-sector tender HP09-2023SD (Contract Circular 7 Feb 2023; Add-193 replacement circular 15 Sep 2025)",
+      "note": "R39.00 per pack of 30 = R1.30/tablet at 18.45 ZAR/USD. CHAI pricing review, 16 Sep 2026. Used as a focus-country proxy: no in-country procurement record.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.39484130026987546,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "sa-hp09-2023sd",
+      "label": "SA tender HP09-2023SD (proxy)",
+      "tier": "T3",
+      "priceUsd": 0.0705,
+      "unit": "per 15mg oral tablet",
+      "ref": "SA public-sector tender HP09-2023SD (Contract Circular 7 Feb 2023; Add-193 replacement circular 15 Sep 2025)",
+      "note": "R39.00 per pack of 30 = R1.30/tablet at 18.45 ZAR/USD. CHAI pricing review, 16 Sep 2026. Used as a focus-country proxy: no in-country procurement record.",
+      "priority": 1,
+      "default": true
+     },
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.2411793140351905,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": false
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "sa-hp09-2023sd",
+      "label": "SA tender HP09-2023SD",
+      "tier": "T1",
+      "priceUsd": 0.0705,
+      "unit": "per 15mg oral tablet",
+      "ref": "SA public-sector tender HP09-2023SD (Contract Circular 7 Feb 2023; Add-193 replacement circular 15 Sep 2025)",
+      "note": "R39.00 per pack of 30 = R1.30/tablet at 18.45 ZAR/USD. CHAI pricing review, 16 Sep 2026. Replaces the earlier India I/E figure with the domestic tender.",
+      "priority": 1,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-14",
+   "name": "Aripiprazole (IM)",
+   "formulation": "IM injection",
+   "dosingGuideline": "9.75mg PRN acute (max 3 doses/day) — IM doses per acute-care patient-year (20) = STATED ASSUMPTION pending acute redesign; evidence-derived cohort figure 0.18 ampoules per treated patient-year (Src-Demand rows 55–63)",
+   "injectable": "Yes",
+   "strengthMg": 9.75,
+   "doseMg": 9.75,
+   "frequency": "Acute (PRN)",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 20,
+   "annualUnitsCached": 20,
+   "dosingSource": "FDA label",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 3.777701803186614,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 3.7049238140994474,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 4.05859319478204,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 3.899645435851196,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 10.9724,
+   "otherDefaultSource": "SA SEP (Abilify IM)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "NHS Drug Tariff Dec 2025, Country-adjusted"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "NHS Drug Tariff Dec 2025, Country-adjusted"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "NHS Drug Tariff Dec 2025, Country-adjusted"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "NHS Drug Tariff Dec 2025, Country-adjusted"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "tier": "T4",
+      "priceUsd": 3.777701803186614,
+      "unit": null,
+      "ref": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "tier": "T4",
+      "priceUsd": 3.7049238140994474,
+      "unit": null,
+      "ref": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "tier": "T4",
+      "priceUsd": 4.05859319478204,
+      "unit": null,
+      "ref": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "tier": "T4",
+      "priceUsd": 3.899645435851196,
+      "unit": null,
+      "ref": "NHS Drug Tariff Dec 2025, Country-adjusted",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-15",
+   "name": "Aripiprazole (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "400mg monthly (12 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 400,
+   "doseMg": 400,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 12,
+   "annualUnitsCached": 12,
+   "dosingSource": "FDA label; Abilify Maintena PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 76.19440653958982,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 82.82758127728894,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 50.59323637622676,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 65.08014749287209,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 207.1055,
+   "otherDefaultSource": "SA SEP (Abilify Maintena)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 76.19440653958982,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 82.82758127728894,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 50.59323637622676,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 65.08014749287209,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-16",
+   "name": "Cariprazine (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "3mg once daily (range 1.5-6mg/day)",
+   "injectable": "No",
+   "strengthMg": 3,
+   "doseMg": 3,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 365,
+   "dosingSource": "FDA label; Vraylar PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 0.4346704200479142,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 0.47251105665670234,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 0.28862201710057817,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.3712662954177424,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 2.3066,
+   "otherDefaultSource": "SA SEP (Reagila)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.4346704200479142,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.47251105665670234,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.28862201710057817,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.3712662954177424,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-17",
+   "name": "Lurasidone (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "80mg once daily with food (range 40-160mg/day)",
+   "injectable": "No",
+   "strengthMg": 80,
+   "doseMg": 80,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 365,
+   "dosingSource": "FDA label; Latuda PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 0.3962911234177294,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 0.43079061475851516,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 0.26313808836421665,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.33848527645846593,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 2.0954,
+   "otherDefaultSource": "SA SEP (Maktuda)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.3962911234177294,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.43079061475851516,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.26313808836421665,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.33848527645846593,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-18",
+   "name": "Lumateperone (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "42mg once daily",
+   "injectable": "No",
+   "strengthMg": 42,
+   "doseMg": 42,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 365,
+   "dosingSource": "FDA label; Caplyta PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 0.24189911373510778,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 0.26295786546205785,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 0.16062148911207927,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.20661398539925688,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 54.6,
+   "otherDefaultSource": "US NADAC (Caplyta; no SA)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.24189911373510778,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.26295786546205785,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.16062148911207927,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.20661398539925688,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-19",
+   "name": "Amisulpride (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "400mg daily (2x200mg) (range 200-800mg/day)",
+   "injectable": "No",
+   "strengthMg": 200,
+   "doseMg": 400,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 2,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 730,
+   "dosingSource": "BNF; Solian PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": 0.387111061111374,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": 0.42081137361283927,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": 0.2570425088681994,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 0.3306442834509157,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 2.2713,
+   "otherDefaultSource": "SA SEP median",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Country-adjusted global benchmark price"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.387111061111374,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.42081137361283927,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.2570425088681994,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "base",
+      "label": "Country-adjusted global benchmark price",
+      "tier": "T4",
+      "priceUsd": 0.3306442834509157,
+      "unit": null,
+      "ref": "Country-adjusted global benchmark price",
+      "note": "Price carried in the model before 17 Sep 2026.",
+      "priority": 5,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-20",
+   "name": "Zuclopenthixol decanoate (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "200mg/ml every 2-4 weeks (12 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 200,
+   "doseMg": 200,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 12,
+   "annualUnitsCached": 12,
+   "dosingSource": "SA IC Appendix A; Clopixol Depot PI",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": 3.2548,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 13.4245,
+   "otherDefaultSource": "SA SEP (Clopixol Depot)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Nigeria": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "Rwanda": {
+     "tier": "T3",
+     "source": "Proxy average from other focus countries (n=1)"
+    },
+    "South Africa": {
+     "tier": "T1",
+     "source": "SA tender HP06-2024SVP/01 Add-2"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "base",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 3.2548,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP06-2024SVP/01 Add-2",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 3.2548,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP06-2024SVP/01 Add-2",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-proxy",
+      "label": "Proxy average from other focus countries (n=1)",
+      "tier": "T3",
+      "priceUsd": 3.2548,
+      "unit": null,
+      "ref": "Mean of South Africa: SA tender HP06-2024SVP/01 Add-2",
+      "note": "Mean of the other focus countries' in-country prices.",
+      "priority": 5,
+      "default": true
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "sa-hp06-2024svp01",
+      "label": "SA tender HP06-2024SVP/01 Add-2",
+      "tier": "T1",
+      "priceUsd": 3.2548,
+      "unit": "per 200mg/ml ampoule",
+      "ref": "SA public-sector tender HP06-2024SVP/01 Add-2 replacement circular",
+      "note": "R59.66 per 1ml ampoule at 18.33 ZAR/USD. CHAI pricing review, 16 Sep 2026. Replaces the T3 figure carried over from the Ethiopian proxy.",
+      "priority": 1,
+      "default": true
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-21",
+   "name": "Fluphenazine decanoate (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "25mg/ml amp, monthly (12 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 25,
+   "doseMg": 25,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 12,
+   "annualUnitsCached": 12,
+   "dosingSource": "WHO EML; Demand Model Med Defaults",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 13.4245,
+   "otherDefaultSource": "MSH 2015 $0.834/ml consistent",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH 2015 $0.834/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH 2015 $0.834/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH 2015 $0.834/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH 2015 $0.834/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-22",
+   "name": "Haloperidol (IM, short-acting)",
+   "formulation": "IM injection",
+   "dosingGuideline": "5mg/ml amp, acute PRN — IM doses per acute-care patient-year (20) = STATED ASSUMPTION pending acute redesign; evidence-derived cohort figure 0.18 ampoules per treated patient-year (Src-Demand rows 55–63)",
+   "injectable": "Yes",
+   "strengthMg": 5,
+   "doseMg": 5,
+   "frequency": "Acute (PRN)",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 20,
+   "annualUnitsCached": 20,
+   "dosingSource": "ETH STG emergency phase; mirrors olanzapine IM pattern",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 13.4245,
+   "otherDefaultSource": "MSH $0.31/ml consistent",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH $0.31/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH $0.31/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH $0.31/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH $0.31/ml consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-23",
+   "name": "Trifluoperazine (oral)",
+   "formulation": "oral tablet",
+   "dosingGuideline": "20mg/day (WHO DDD) = 4 x 5mg tabs",
+   "injectable": "No",
+   "strengthMg": 5,
+   "doseMg": 20,
+   "frequency": "Daily",
+   "unitsPerAdminCached": 4,
+   "adminsPerYrCached": 365,
+   "annualUnitsCached": 1460,
+   "dosingSource": "WHO DDD 20mg/day; Demand Model Med Defaults",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 13.4245,
+   "otherDefaultSource": "MSH buyer median $0.058/tab consistent",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH buyer median $0.058/tab consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH buyer median $0.058/tab consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH buyer median $0.058/tab consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH buyer median $0.058/tab consistent, is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  },
+  {
+   "intId": "SCZ-24",
+   "name": "Haloperidol decanoate (LAI)",
+   "formulation": "LAI injection",
+   "dosingGuideline": "50mg/ml amp, monthly (12 admin/yr)",
+   "injectable": "Yes",
+   "strengthMg": 50,
+   "doseMg": 50,
+   "frequency": "Monthly",
+   "unitsPerAdminCached": 1,
+   "adminsPerYrCached": 12,
+   "annualUnitsCached": 12,
+   "dosingSource": "RWA STG 50-200mg/month; Demand Model Med Defaults",
+   "prices": {
+    "Ethiopia": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Ghana": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Nigeria": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "Rwanda": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    },
+    "South Africa": {
+     "cheapest": null,
+     "average": null,
+     "negotiated": null,
+     "bestCrossCountry": null
+    }
+   },
+   "priceNotes": null,
+   "crossCountryBest": null,
+   "otherDefault": 13.4245,
+   "otherDefaultSource": "MSH International Medical Products Price Guide 2015 reference, $5.58-9.13 per ampoule (n=1 each side)",
+   "effectiveUnitPriceCached": null,
+   "tiers": {
+    "Ethiopia": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Nigeria": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "Rwanda": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    },
+    "South Africa": {
+     "tier": "T4",
+     "source": "Global benchmark placeholder (no product-specific price)"
+    }
+   },
+   "priceSources": {
+    "Ethiopia": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH International Medical Products Price Guide 2015 reference, $5.58-9.13 per ampoule (n=1 each side), is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Nigeria": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH International Medical Products Price Guide 2015 reference, $5.58-9.13 per ampoule (n=1 each side), is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "Rwanda": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH International Medical Products Price Guide 2015 reference, $5.58-9.13 per ampoule (n=1 each side), is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ],
+    "South Africa": [
+     {
+      "id": "public-benchmark",
+      "label": "Global benchmark placeholder (no product-specific price)",
+      "tier": "T4",
+      "priceUsd": 13.4245,
+      "unit": null,
+      "ref": "Placeholder: the model's fallback value was copied from another product and is not this product's price (the cited reference, MSH International Medical Products Price Guide 2015 reference, $5.58-9.13 per ampoule (n=1 each side), is a different unit basis)",
+      "priority": 9,
+      "default": true,
+      "note": "No in-country or focus-country price in this version; enter a local price on Products."
+     }
+    ]
+   },
+   "selectedSource": {
+    "Ethiopia": null,
+    "Nigeria": null,
+    "Rwanda": null,
+    "South Africa": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-CE Thresholds"
+ },
+ "gdpPerCapita": [
+  {
+   "country": "Ethiopia",
+   "gdpUsd": 1133.88,
+   "year": 2024,
+   "usd2026": 1190.574,
+   "source": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=ET"
+  },
+  {
+   "country": "Nigeria",
+   "gdpUsd": 1084.16,
+   "year": 2024,
+   "usd2026": 1138.3680000000002,
+   "source": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=NG"
+  },
+  {
+   "country": "Rwanda",
+   "gdpUsd": 1059.94,
+   "year": 2024,
+   "usd2026": 1112.9370000000001,
+   "source": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=RW"
+  },
+  {
+   "country": "South Africa",
+   "gdpUsd": 6267.19,
+   "year": 2024,
+   "usd2026": 6580.5495,
+   "source": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=ZA"
+  }
+ ],
+ "pichonRiviere": [
+  {
+   "country": "Ethiopia",
+   "valueUsd": 124,
+   "year": 2019,
+   "usd2026": 155,
+   "source": "Pichon-Riviere et al. 2023, Lancet Glob Health 11:e833-e842, doi:10.1016/S2214-109X(23)00162-6"
+  },
+  {
+   "country": "Nigeria",
+   "valueUsd": 374,
+   "year": 2019,
+   "usd2026": 467.5,
+   "source": "Pichon-Riviere et al. 2023"
+  },
+  {
+   "country": "Rwanda",
+   "valueUsd": 254,
+   "year": 2019,
+   "usd2026": 317.5,
+   "source": "Pichon-Riviere et al. 2023"
+  },
+  {
+   "country": "South Africa",
+   "valueUsd": 4512,
+   "year": 2019,
+   "usd2026": 5640,
+   "source": "Pichon-Riviere et al. 2023"
+  }
+ ],
+ "ochalek": [
+  {
+   "country": "Ethiopia",
+   "valueUsd": 194,
+   "year": 2015,
+   "usd2026": 261.90000000000003,
+   "source": "Ochalek et al. 2018 BMJ Glob Health"
+  },
+  {
+   "country": "Nigeria",
+   "valueUsd": 252.5,
+   "year": 2015,
+   "usd2026": 340.875,
+   "source": "Ochalek et al. 2018 BMJ Glob Health"
+  },
+  {
+   "country": "Rwanda",
+   "valueUsd": 244,
+   "year": 2015,
+   "usd2026": 329.40000000000003,
+   "source": "Ochalek et al. 2018 BMJ Glob Health"
+  },
+  {
+   "country": "South Africa",
+   "valueUsd": 2907,
+   "year": 2015,
+   "usd2026": 3924.4500000000003,
+   "source": "Ochalek et al. 2018 BMJ Glob Health"
+  }
+ ],
+ "national": [
+  {
+   "country": "South Africa",
+   "valueUsd": 3015,
+   "year": 2015,
+   "usd2026": 4070.2500000000005,
+   "source": "Edoka & Stacey 2020"
+  }
+ ],
+ "fx": [
+  {
+   "country": "Ethiopia",
+   "lcuPerUsd": 156.8061,
+   "currency": "ETB",
+   "source": "CHAI country-source compilation, Sep 2026; operational rates used in the cost data"
+  },
+  {
+   "country": "Nigeria",
+   "lcuPerUsd": 1600,
+   "currency": "NGN",
+   "source": "CHAI country-source compilation, Sep 2026; operational rates used in the cost data"
+  },
+  {
+   "country": "Rwanda",
+   "lcuPerUsd": 1318.13,
+   "currency": "RWF",
+   "source": "CHAI country-source compilation, Sep 2026; operational rates used in the cost data"
+  },
+  {
+   "country": "South Africa",
+   "lcuPerUsd": 18.5,
+   "currency": "ZAR",
+   "source": "CHAI country-source compilation, Sep 2026; operational rates used in the cost data"
+  }
+ ]
+}

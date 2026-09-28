@@ -1,0 +1,280 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-Inpatient Costs"
+ },
+ "byCountryCondition": [
+  {
+   "country": "Ethiopia",
+   "condition": "Schizophrenia",
+   "admissionProb": 0.5,
+   "losDays": 30,
+   "costPerDayLcu": 245,
+   "fx": 156.8061,
+   "costPerDayUsd": 1.5624392163315077,
+   "source": "ET Data Collection; validated by ET team 2026-09-04 as an overall probability applied annually"
+  },
+  {
+   "country": "Ethiopia",
+   "condition": "Depression",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 156.8061,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Ethiopia",
+   "condition": "Bipolar",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": null,
+   "fx": 156.8061,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Ethiopia",
+   "condition": "Anxiety",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 156.8061,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Ghana",
+   "condition": "Schizophrenia",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": null,
+   "fx": null,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Ghana",
+   "condition": "Depression",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": null,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Ghana",
+   "condition": "Bipolar",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": null,
+   "fx": null,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Ghana",
+   "condition": "Anxiety",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": null,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Nigeria",
+   "condition": "Schizophrenia",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": 7000,
+   "fx": 1600,
+   "costPerDayUsd": 4.375,
+   "source": "NHIA, SA MHIC estimates"
+  },
+  {
+   "country": "Nigeria",
+   "condition": "Depression",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 1600,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Nigeria",
+   "condition": "Bipolar",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": null,
+   "fx": 1600,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Nigeria",
+   "condition": "Anxiety",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 1600,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Rwanda",
+   "condition": "Schizophrenia",
+   "admissionProb": 0.3988,
+   "losDays": 45,
+   "costPerDayLcu": 2000,
+   "fx": 1318.13,
+   "costPerDayUsd": 1.5173010249368422,
+   "source": "Clinician input; provisional, applied annually pending validation"
+  },
+  {
+   "country": "Rwanda",
+   "condition": "Depression",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 1318.13,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Rwanda",
+   "condition": "Bipolar",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": null,
+   "fx": 1318.13,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "Rwanda",
+   "condition": "Anxiety",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 1318.13,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "South Africa",
+   "condition": "Schizophrenia",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": 1660.5,
+   "fx": 18.5,
+   "costPerDayUsd": 89.75675675675676,
+   "source": "SA MH Investment Case (50:50 district/specialised bed-day)"
+  },
+  {
+   "country": "South Africa",
+   "condition": "Depression",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 18.5,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "South Africa",
+   "condition": "Bipolar",
+   "admissionProb": 0.15,
+   "losDays": 28,
+   "costPerDayLcu": null,
+   "fx": 18.5,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  },
+  {
+   "country": "South Africa",
+   "condition": "Anxiety",
+   "admissionProb": 0.02,
+   "losDays": 14,
+   "costPerDayLcu": null,
+   "fx": 18.5,
+   "costPerDayUsd": 4,
+   "source": "South African MH Investment Case"
+  }
+ ],
+ "rrByFormulationLegacy": {
+  "Oral": 1,
+  "LAI": 0.75,
+  "IM short-acting": 1,
+  "No treatment": 1
+ },
+ "mortality": [
+  {
+   "parameter": "Baseline mortality rate (/yr, treated SCZ cohort)",
+   "value": 0.01,
+   "source": "LMIC cohort assumption — verify against Ethiopian cohort data"
+  },
+  {
+   "parameter": "LAI-vs-oral all-cause mortality OR",
+   "value": 0.79,
+   "source": "Aymerich 2024 Molecular Psychiatry meta-analysis, 17 studies; Taipale 2018 HR 0.67 = tornado bound; observational grade — RCT meta (Kishimoto 2016) found no difference"
+  },
+  {
+   "parameter": "Discounted YLLs per death averted",
+   "value": 19.6,
+   "source": "3% discount, ~30y remaining LE — assumption"
+  },
+  {
+   "parameter": "Treated-vs-untreated all-cause mortality HR (any antipsychotic)",
+   "value": 0.71,
+   "source": "Correll 2022 (most conservative pooled); low FIN20 (Taipale 2020) 0.48; high FIN11 (Tiihonen 2009) 0.81. Range 0.48–0.81. Observational grade — scenario only; base case assigns no mortality benefit (WHO-CHOICE / NICE CG178 / ICER 2024 practice; randomised syntheses null). Added 2026-09-11: when the channel is ON, every treated product receives this credit vs No treatment, in addition to the LAI-vs-oral OR layer above."
+  },
+  {
+   "parameter": "Clozapine all-cause mortality HR (product layer)",
+   "value": 0.74,
+   "source": "Clozapine vs other antipsychotics: HR 0.74 (range 0.43–0.74); Taipale/Tiihonen register series; observational grade — scenario only. Additional product layer on top of the treated-vs-untreated credit. Added 2026-09-11."
+  }
+ ],
+ "admissionRrOnTreatment": [
+  {
+   "bucket": "No treatment",
+   "rr": 1,
+   "low": null,
+   "high": null,
+   "source": "Fixed by definition — the untreated arm anchors RR = 1.00."
+  },
+  {
+   "bucket": "Class default (any antipsychotic)",
+   "rr": 0.43,
+   "low": 0.32,
+   "high": 0.57,
+   "source": "Ceraso et al. 2020 Cochrane CD008016, hospitalisation RR 0.43 (0.32–0.57), 21 RCTs, high certainty; Leucht 2012 Lancet 0.38 optimistic anchor"
+  },
+  {
+   "bucket": "Clozapine",
+   "rr": 0.3,
+   "low": 0.2,
+   "high": 0.43,
+   "source": "registers 0.51 (Finland, Taipale) / 0.53 (Sweden, Tiihonen 2017) vs non-use; cohort MAs 0.74–0.82 vs other APs; back-solved to register band at oral adherence"
+  },
+  {
+   "bucket": "Olanzapine (oral, IM, LAI)",
+   "rr": 0.35,
+   "low": 0.25,
+   "high": 0.45,
+   "source": "Schneider-Thoma 2022 NMA via Jin 2025; NICE CG178 MTC 0.46 ratio; Tiihonen 2011 0.54 vs oral risperidone; shrunk toward class"
+  },
+  {
+   "bucket": "Quetiapine",
+   "rr": 0.55,
+   "low": 0.43,
+   "high": 0.75,
+   "source": "NMA 0.47; Sweden within-individual 0.91 (0.83–1.00); direction agrees"
+  }
+ ]
+}

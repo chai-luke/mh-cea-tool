@@ -1,0 +1,496 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-SE Profiles + Calc-SE",
+  "useCategoryAlignment": "17 Sep 2026: acute IMs (SCZ-11/14/22) costBucket -> episodic (0)"
+ },
+ "buckets": [
+  {
+   "bucket": "FGA oral & LAI",
+   "dwDecrement": 0.03,
+   "low": 0.006,
+   "high": 0.115,
+   "mgmtCostUsd": 12,
+   "mgmtCostLcuCached": 1881.6731999999997,
+   "members": "haloperidol, chlorpromazine, trifluoperazine + haloperidol/fluphenazine/flupentixol/zuclopenthixol decanoate. Composition per se-decrements-evidence.md §6a: incidence Huhn 2019 / Schneider-Thoma 2022 via Zhou 2025 / Pillinger 2020 / Cochrane / Carbon 2017 (TD prevalence-based); disutilities Millier 2014, Lenert 2004, Briggs 2008, GBD 2019, ICER 2024; EPS duration weight 0.5. TD + prolactin channels ≈40% of this value — WEAKEST disutility evidence.",
+   "sourceNote": null
+  },
+  {
+   "bucket": "SGA standard D2",
+   "dwDecrement": 0.022,
+   "low": 0.004,
+   "high": 0.08,
+   "mgmtCostUsd": 50,
+   "mgmtCostLcuCached": 7840.304999999999,
+   "members": "risperidone oral & LAI, paliperidone palmitate, amisulpride [alternative: paliperidone 0.025, amisulpride 0.027 as own rows — not built]. Same §6a composition; prolactin channel ≈40% of value — weak disutility evidence.",
+   "sourceNote": null
+  },
+  {
+   "bucket": "Quetiapine",
+   "dwDecrement": 0.015,
+   "low": 0.004,
+   "high": 0.05,
+   "mgmtCostUsd": 50,
+   "mgmtCostLcuCached": 7840.304999999999,
+   "members": "Same §6a composition (sedation-dominant profile). Mgmt cost re-mapped from the former SGA bucket (50), not re-estimated.",
+   "sourceNote": null
+  },
+  {
+   "bucket": "Olanzapine (oral, IM, LAI)",
+   "dwDecrement": 0.026,
+   "low": 0.008,
+   "high": 0.08,
+   "mgmtCostUsd": 80,
+   "mgmtCostLcuCached": 12544.488,
+   "members": "[alternative 0.019 excluding downstream diabetes — not built]. Same §6a composition (metabolic-dominant). Mgmt cost re-mapped from the former OLANZAPINE bucket (80). Short-acting IM olanzapine takes this COST row but the Acute episodic DECREMENT row.",
+   "sourceNote": null
+  },
+  {
+   "bucket": "SGA low-metabolic / partial agonist",
+   "dwDecrement": 0.009,
+   "low": 0.001,
+   "high": 0.04,
+   "mgmtCostUsd": 50,
+   "mgmtCostLcuCached": 7840.304999999999,
+   "members": "aripiprazole oral/IM/LAI, cariprazine, lurasidone, lumateperone. Same §6a composition. Mgmt cost re-mapped from the former SGA bucket (50).",
+   "sourceNote": null
+  },
+  {
+   "bucket": "Clozapine",
+   "dwDecrement": 0.027,
+   "low": 0.01,
+   "high": 0.09,
+   "mgmtCostUsd": 290,
+   "mgmtCostLcuCached": 45473.76899999999,
+   "members": "[alternative 0.030 incl. neutropenia mortality — not built]. Same §6a composition. Mgmt cost re-mapped from the former CLOZAPINE bucket (290; mandatory neutrophil monitoring).",
+   "sourceNote": null
+  },
+  {
+   "bucket": "Novel muscarinic (xanomeline-trospium)",
+   "dwDecrement": 0.003,
+   "low": 0.001,
+   "high": 0.01,
+   "mgmtCostUsd": 50,
+   "mgmtCostLcuCached": 7840.304999999999,
+   "members": "[alternative: hedge 0.010 — not built]. Same §6a composition (EMERGENT programme; ICER 2024). Mgmt cost re-mapped from the former NOVEL bucket (50).",
+   "sourceNote": null
+  },
+  {
+   "bucket": "Acute short-acting IM (episodic)",
+   "dwDecrement": 0.001,
+   "low": 0,
+   "high": 0.002,
+   "mgmtCostUsd": 0,
+   "mgmtCostLcuCached": null,
+   "members": "haloperidol IM, olanzapine IM, aripiprazole IM — STATED ASSUMPTION: episodic exposure, decrement per treated patient-year. Cost stays on the molecule class row (re-map, do not re-estimate).",
+   "sourceNote": "Management cost 0 by construction (17 Sep 2026): acute-agitation products are costed per episode, not per treated year; the maintenance metabolic-monitoring buckets do not apply."
+  },
+  {
+   "bucket": "Chlorpromazine (cost row — decrement uses the FGA bucket)",
+   "dwDecrement": null,
+   "low": null,
+   "high": null,
+   "mgmtCostUsd": 15,
+   "mgmtCostLcuCached": 2352.0915,
+   "members": "Own COST row 2026-09-11: metabolic-treatment incidence 0.15 (Adams 2005 Cochrane: weight gain >4.5 kg 41% vs 8%; stated assumption) instead of the FGA 0.05 — built in the detail block row 23 below; decrement unchanged (FGA bucket).",
+   "sourceNote": null
+  },
+  {
+   "bucket": "Literature-structure alternative (uniform decrement, all classes) — Sensitivity scenario only",
+   "dwDecrement": 0.01,
+   "low": null,
+   "high": null,
+   "mgmtCostUsd": null,
+   "mgmtCostLcuCached": null,
+   "members": "ICER-implied cohort-average view; consumed only by the Sensitivity tornado row 'SE decrement: literature-structure alternative'.",
+   "sourceNote": null
+  }
+ ],
+ "costDetail": [
+  {
+   "drugClass": "FGA (haloperidol, chlorpromazine)",
+   "metabolicMonitUsd": 0,
+   "metabolicTxIncidence": 0.05,
+   "metabolicTxUsd": 50,
+   "epsIncidence": 0.3,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 10,
+   "source": "Leucht 2013; ICER 2024"
+  },
+  {
+   "drugClass": "Chlorpromazine (own cost row, 2026-09-11)",
+   "metabolicMonitUsd": 0,
+   "metabolicTxIncidence": 0.15,
+   "metabolicTxUsd": 50,
+   "epsIncidence": 0.3,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 15,
+   "source": "Chlorpromazine split from FGA (owner 2026-09-11): metabolic-treatment incidence 0.15 vs FGA 0.05 — Adams et al. 2005 Cochrane (chlorpromazine): weight gain >4.5 kg 41% vs 8% placebo; STATED ASSUMPTION on the treated-incidence conversion. All other components mirror the FGA row. Feeds bucket-table row 17."
+  },
+  {
+   "drugClass": "SGA (risperidone)",
+   "metabolicMonitUsd": 35,
+   "metabolicTxIncidence": 0.1,
+   "metabolicTxUsd": 80,
+   "epsIncidence": 0.15,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 46.75,
+   "source": "Huhn 2019; ICER 2024"
+  },
+  {
+   "drugClass": "SGA (olanzapine) - HIGH metabolic",
+   "metabolicMonitUsd": 140,
+   "metabolicTxIncidence": 0.3,
+   "metabolicTxUsd": 120,
+   "epsIncidence": 0.05,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 177.25,
+   "source": "ICER 2024 Cobenfy Report"
+  },
+  {
+   "drugClass": "SGA (quetiapine)",
+   "metabolicMonitUsd": 70,
+   "metabolicTxIncidence": 0.15,
+   "metabolicTxUsd": 80,
+   "epsIncidence": 0.08,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 84,
+   "source": "Huhn 2019"
+  },
+  {
+   "drugClass": "Clozapine - requires blood monitoring",
+   "metabolicMonitUsd": 200,
+   "metabolicTxIncidence": 0.35,
+   "metabolicTxUsd": 120,
+   "epsIncidence": 0.02,
+   "epsTxUsd": 25,
+   "otherSeUsd": 50,
+   "totalSeUsd": 292.5,
+   "source": "SA IC; mandatory neutrophil monitoring"
+  },
+  {
+   "drugClass": "FGA LAI (flupenthixol dec.)",
+   "metabolicMonitUsd": 0,
+   "metabolicTxIncidence": 0.05,
+   "metabolicTxUsd": 50,
+   "epsIncidence": 0.25,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 8.75,
+   "source": "Same SE as oral FGA"
+  },
+  {
+   "drugClass": "SGA LAI (risperidone, paliperidone)",
+   "metabolicMonitUsd": 35,
+   "metabolicTxIncidence": 0.1,
+   "metabolicTxUsd": 80,
+   "epsIncidence": 0.1,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 45.5,
+   "source": "Same intrinsic SE as oral SGA"
+  },
+  {
+   "drugClass": "Novel (Cobenfy) - LOW metabolic",
+   "metabolicMonitUsd": 10,
+   "metabolicTxIncidence": 0.03,
+   "metabolicTxUsd": 40,
+   "epsIncidence": 0.02,
+   "epsTxUsd": 10,
+   "otherSeUsd": 0,
+   "totalSeUsd": 11.399999999999999,
+   "source": "ICER 2024; reduced D2 antagonism"
+  },
+  {
+   "drugClass": "SGA (aripiprazole) - LOW metabolic",
+   "metabolicMonitUsd": 15,
+   "metabolicTxIncidence": 0.05,
+   "metabolicTxUsd": 50,
+   "epsIncidence": 0.1,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 20,
+   "source": "Huhn 2019; low metabolic risk"
+  },
+  {
+   "drugClass": "SGA LAI (aripiprazole) - LOW metabolic",
+   "metabolicMonitUsd": 20,
+   "metabolicTxIncidence": 0.05,
+   "metabolicTxUsd": 50,
+   "epsIncidence": 0.08,
+   "epsTxUsd": 25,
+   "otherSeUsd": 5,
+   "totalSeUsd": 29.5,
+   "source": "Same as oral + injection site monitoring"
+  },
+  {
+   "drugClass": "SGA (cariprazine) - moderate metabolic",
+   "metabolicMonitUsd": 30,
+   "metabolicTxIncidence": 0.1,
+   "metabolicTxUsd": 80,
+   "epsIncidence": 0.1,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 40.5,
+   "source": "Huhn 2019; moderate metabolic"
+  },
+  {
+   "drugClass": "SGA (lurasidone) - LOW metabolic",
+   "metabolicMonitUsd": 10,
+   "metabolicTxIncidence": 0.05,
+   "metabolicTxUsd": 50,
+   "epsIncidence": 0.1,
+   "epsTxUsd": 25,
+   "otherSeUsd": 0,
+   "totalSeUsd": 15,
+   "source": "Huhn 2019; requires food for absorption"
+  },
+  {
+   "drugClass": "SGA (lumateperone) - VERY LOW metabolic",
+   "metabolicMonitUsd": 5,
+   "metabolicTxIncidence": 0.02,
+   "metabolicTxUsd": 40,
+   "epsIncidence": 0.05,
+   "epsTxUsd": 10,
+   "otherSeUsd": 0,
+   "totalSeUsd": 6.3,
+   "source": "Correll 2020; very low metabolic burden"
+  },
+  {
+   "drugClass": "SGA (amisulpride) - moderate metabolic",
+   "metabolicMonitUsd": 25,
+   "metabolicTxIncidence": 0.1,
+   "metabolicTxUsd": 80,
+   "epsIncidence": 0.15,
+   "epsTxUsd": 25,
+   "otherSeUsd": 5,
+   "totalSeUsd": 41.75,
+   "source": "Huhn 2019; hyperprolactinemia risk. Prolactin management $5/yr added 2026-09-11 (ASSUMPTION — prolactin monitoring; consumed flat class cost unchanged at 50, this detail line is documentation)."
+  }
+ ],
+ "productMap": [
+  {
+   "intId": "SCZ-01",
+   "drugClass": "FGA (haloperidol, chlorpromazine)",
+   "costBucket": "FGA oral & LAI",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 12,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 35% × disutility 0.08 (Lenert 2000) + sedation 20% × 0.02 = 0.032; rounded to 0.035"
+  },
+  {
+   "intId": "SCZ-02",
+   "drugClass": "FGA (haloperidol, chlorpromazine)",
+   "costBucket": "Chlorpromazine (cost row — decrement uses the FGA bucket)",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 15,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 35% × disutility 0.08 (Lenert 2000) + sedation 20% × 0.02 = 0.032; rounded to 0.035"
+  },
+  {
+   "intId": "SCZ-03",
+   "drugClass": "SGA (risperidone)",
+   "costBucket": "SGA standard D2",
+   "decrementBucket": "SGA standard D2",
+   "seCostCached": 50,
+   "decrementCached": 0.022,
+   "rationaleLegacy": "Weight gain 20% × 0.03 + hyperprolactinemia 15% × 0.02 + sedation 15% × 0.02 = 0.012; conservatively 0.025"
+  },
+  {
+   "intId": "SCZ-04",
+   "drugClass": "SGA (olanzapine) - HIGH metabolic",
+   "costBucket": "Olanzapine (oral, IM, LAI)",
+   "decrementBucket": "Olanzapine (oral, IM, LAI)",
+   "seCostCached": 80,
+   "decrementCached": 0.026,
+   "rationaleLegacy": "Weight gain 40% × 0.04 + diabetes 10% × 0.05 + dyslipidemia 20% × 0.02 = 0.025; conservatively 0.040"
+  },
+  {
+   "intId": "SCZ-05",
+   "drugClass": "SGA (quetiapine)",
+   "costBucket": "Quetiapine",
+   "decrementBucket": "Quetiapine",
+   "seCostCached": 50,
+   "decrementCached": 0.015,
+   "rationaleLegacy": "Weight gain 20% × 0.03 + hyperprolactinemia 15% × 0.02 + sedation 15% × 0.02 = 0.012; conservatively 0.025"
+  },
+  {
+   "intId": "SCZ-06",
+   "drugClass": "Clozapine - requires blood monitoring",
+   "costBucket": "Clozapine",
+   "decrementBucket": "Clozapine",
+   "seCostCached": 290,
+   "decrementCached": 0.027,
+   "rationaleLegacy": "Weight gain 50% × 0.04 + diabetes 15% × 0.05 + agranulocytosis 1% × 0.30 + sedation 30% × 0.02 + monitoring burden 0.01 = 0.041; rounded to 0.050"
+  },
+  {
+   "intId": "SCZ-07",
+   "drugClass": "FGA LAI (flupenthixol dec.)",
+   "costBucket": "FGA oral & LAI",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 12,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 30% × 0.08 + injection site 8% × 0.01 = 0.025; rounded to 0.030"
+  },
+  {
+   "intId": "SCZ-08",
+   "drugClass": "SGA LAI (risperidone, paliperidone)",
+   "costBucket": "SGA standard D2",
+   "decrementBucket": "SGA standard D2",
+   "seCostCached": 50,
+   "decrementCached": 0.022,
+   "rationaleLegacy": "Same as oral moderate + injection site 5% × 0.01"
+  },
+  {
+   "intId": "SCZ-09",
+   "drugClass": "SGA LAI (risperidone, paliperidone)",
+   "costBucket": "SGA standard D2",
+   "decrementBucket": "SGA standard D2",
+   "seCostCached": 50,
+   "decrementCached": 0.022,
+   "rationaleLegacy": "Same as oral moderate + injection site 5% × 0.01"
+  },
+  {
+   "intId": "SCZ-10",
+   "drugClass": "Novel (Cobenfy) - LOW metabolic",
+   "costBucket": "Novel muscarinic (xanomeline-trospium)",
+   "decrementBucket": "Novel muscarinic (xanomeline-trospium)",
+   "seCostCached": 50,
+   "decrementCached": 0.003,
+   "rationaleLegacy": "GI effects (nausea/constipation) 30% × 0.02 + anticholinergic 15% × 0.02 = 0.009; conservatively 0.020"
+  },
+  {
+   "intId": "SCZ-11",
+   "drugClass": null,
+   "costBucket": "Acute short-acting IM (episodic)",
+   "decrementBucket": "Acute short-acting IM (episodic)",
+   "seCostCached": 0,
+   "decrementCached": 0.001,
+   "rationaleLegacy": "Weight gain 40% × 0.04 + diabetes 10% × 0.05 + dyslipidemia 20% × 0.02 = 0.025; conservatively 0.040"
+  },
+  {
+   "intId": "SCZ-12",
+   "drugClass": "SGA (olanzapine) - HIGH metabolic",
+   "costBucket": "Olanzapine (oral, IM, LAI)",
+   "decrementBucket": "Olanzapine (oral, IM, LAI)",
+   "seCostCached": 80,
+   "decrementCached": 0.026,
+   "rationaleLegacy": "Same as oral olanzapine + PDSS risk 0.1% × 0.10 + injection site 5% × 0.01; ~0.040"
+  },
+  {
+   "intId": "SCZ-13",
+   "drugClass": "SGA (aripiprazole) - LOW metabolic",
+   "costBucket": "SGA low-metabolic / partial agonist",
+   "decrementBucket": "SGA low-metabolic / partial agonist",
+   "seCostCached": 50,
+   "decrementCached": 0.009,
+   "rationaleLegacy": "Weight gain 10% × disutility 0.03 (NICE) + akathisia 10% × 0.02 = 0.007; conservatively 0.015"
+  },
+  {
+   "intId": "SCZ-14",
+   "drugClass": "SGA (aripiprazole) - LOW metabolic",
+   "costBucket": "Acute short-acting IM (episodic)",
+   "decrementBucket": "Acute short-acting IM (episodic)",
+   "seCostCached": 0,
+   "decrementCached": 0.001,
+   "rationaleLegacy": "Weight gain 10% × disutility 0.03 (NICE) + akathisia 10% × 0.02 = 0.007; conservatively 0.015"
+  },
+  {
+   "intId": "SCZ-15",
+   "drugClass": "SGA LAI (aripiprazole) - LOW metabolic",
+   "costBucket": "SGA low-metabolic / partial agonist",
+   "decrementBucket": "SGA low-metabolic / partial agonist",
+   "seCostCached": 50,
+   "decrementCached": 0.009,
+   "rationaleLegacy": "Same metabolic as oral + injection site 5% × 0.01 = 0.008; conservatively 0.015"
+  },
+  {
+   "intId": "SCZ-16",
+   "drugClass": "SGA (cariprazine) - moderate metabolic",
+   "costBucket": "SGA low-metabolic / partial agonist",
+   "decrementBucket": "SGA low-metabolic / partial agonist",
+   "seCostCached": 50,
+   "decrementCached": 0.009,
+   "rationaleLegacy": "Weight gain 10% × disutility 0.03 (NICE) + akathisia 10% × 0.02 = 0.007; conservatively 0.015"
+  },
+  {
+   "intId": "SCZ-17",
+   "drugClass": "SGA (lurasidone) - LOW metabolic",
+   "costBucket": "SGA low-metabolic / partial agonist",
+   "decrementBucket": "SGA low-metabolic / partial agonist",
+   "seCostCached": 50,
+   "decrementCached": 0.009,
+   "rationaleLegacy": "Weight gain 10% × disutility 0.03 (NICE) + akathisia 10% × 0.02 = 0.007; conservatively 0.015"
+  },
+  {
+   "intId": "SCZ-18",
+   "drugClass": "SGA (lumateperone) - VERY LOW metabolic",
+   "costBucket": "SGA low-metabolic / partial agonist",
+   "decrementBucket": "SGA low-metabolic / partial agonist",
+   "seCostCached": 50,
+   "decrementCached": 0.009,
+   "rationaleLegacy": "Weight gain 10% × disutility 0.03 (NICE) + akathisia 10% × 0.02 = 0.007; conservatively 0.015"
+  },
+  {
+   "intId": "SCZ-19",
+   "drugClass": "SGA (amisulpride) - moderate metabolic",
+   "costBucket": "SGA standard D2",
+   "decrementBucket": "SGA standard D2",
+   "seCostCached": 50,
+   "decrementCached": 0.022,
+   "rationaleLegacy": "Weight gain 20% × 0.03 + hyperprolactinemia 15% × 0.02 + sedation 15% × 0.02 = 0.012; conservatively 0.025"
+  },
+  {
+   "intId": "SCZ-20",
+   "drugClass": "FGA LAI (zuclopenthixol dec.)",
+   "costBucket": "FGA oral & LAI",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 12,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 30% × 0.08 + injection site 8% × 0.01 = 0.025; rounded to 0.030"
+  },
+  {
+   "intId": "SCZ-21",
+   "drugClass": "FGA LAI (zuclopenthixol dec.)",
+   "costBucket": "FGA oral & LAI",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 12,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 30% × 0.08 + injection site 8% × 0.01 = 0.025; rounded to 0.030"
+  },
+  {
+   "intId": "SCZ-22",
+   "drugClass": "FGA LAI (zuclopenthixol dec.)",
+   "costBucket": "Acute short-acting IM (episodic)",
+   "decrementBucket": "Acute short-acting IM (episodic)",
+   "seCostCached": 0,
+   "decrementCached": 0.001,
+   "rationaleLegacy": "EPS 30% × 0.08 + injection site 8% × 0.01 = 0.025; rounded to 0.030"
+  },
+  {
+   "intId": "SCZ-23",
+   "drugClass": "FGA LAI (zuclopenthixol dec.)",
+   "costBucket": "FGA oral & LAI",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 12,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 30% × 0.08 + injection site 8% × 0.01 = 0.025; rounded to 0.030"
+  },
+  {
+   "intId": "SCZ-24",
+   "drugClass": "FGA LAI (zuclopenthixol dec.)",
+   "costBucket": "FGA oral & LAI",
+   "decrementBucket": "FGA oral & LAI",
+   "seCostCached": 12,
+   "decrementCached": 0.03,
+   "rationaleLegacy": "EPS 30% × 0.08 + injection site 8% × 0.01 = 0.025; rounded to 0.030"
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-Transition Factors + Src-DW"
+ },
+ "transferFactors": [
+  {
+   "condition": "Depression",
+   "ratingScale": 0.172,
+   "tto": 0.139,
+   "applied": null,
+   "source": "Sanderson et al 2004",
+   "notes": null
+  },
+  {
+   "condition": "Anxiety",
+   "ratingScale": null,
+   "tto": null,
+   "applied": null,
+   "source": null,
+   "notes": null
+  },
+  {
+   "condition": "Schizophrenia",
+   "ratingScale": 0.204,
+   "tto": 0.158,
+   "applied": 0.181,
+   "source": "0.181 as published in Andrews et al. 2003, Br J Psychiatry 183:427-435 ('Cost-effectiveness of current and optimal treatment for schizophrenia') and applied by WHO-CHOICE: Chisholm et al. 2008, Bull WHO 86:542, Table 2 ('Conversion = ES * 0.181'). Sanderson et al. 2004, Qual Life Res 13:1255 documents the GP-vignette method; its 0.204 (rating-scale) / 0.158 (TTO) are METHOD-SPECIFIC RANGE TOPS across five disorders, retained as sensitivity bounds; they are not verifiably schizophrenia-specific and no published source derives 0.181 as their mean.",
+   "notes": null
+  },
+  {
+   "condition": "Bipolar Disorder",
+   "ratingScale": null,
+   "tto": null,
+   "applied": null,
+   "source": null,
+   "notes": null
+  },
+  {
+   "condition": "Default / other condition",
+   "ratingScale": null,
+   "tto": null,
+   "applied": 0.181,
+   "source": null,
+   "notes": "Fallback only, for conditions without a condition-specific mapping study."
+  }
+ ],
+ "parameterBlock": [
+  {
+   "parameter": "k_abs (absolute transfer factor, DW units per SD)",
+   "value": 0.181,
+   "low": 0.104,
+   "high": 0.204,
+   "source": "Andrews et al. 2003 BJP 183:427 doi:10.1192/bjp.183.5.427; range Sanderson et al. 2004 QoLR 13:1255 TTO low / RS high"
+  },
+  {
+   "parameter": "Andrews anchoring baseline DW",
+   "value": 0.638,
+   "low": null,
+   "high": null,
+   "source": "Andrews 2003 composite baseline"
+  },
+  {
+   "parameter": "k_prop (proportional transfer factor, share of baseline DW per SD)",
+   "value": 0.284,
+   "low": 0.163,
+   "high": 0.32,
+   "source": "derived 0.181/0.638; WHO-CHOICE equivalent 0.181/0.627 = 0.289 (Chisholm 2008 Bull WHO doi:10.2471/BLT.07.045377)"
+  },
+  {
+   "parameter": "DW_residual (GBD schizophrenia residual state)",
+   "value": 0.588,
+   "low": 0.411,
+   "high": 0.754,
+   "source": "GBD 2013→2021 schizophrenia residual state, Salomon 2015 Lancet Glob Health doi:10.1016/S2214-109X(15)00069-8"
+  },
+  {
+   "parameter": "Acute→residual gap (derived — display only; the floor is computed per row in Calc-Direct as baseline DW − DW_residual)",
+   "value": 0.19000000000000006,
+   "low": null,
+   "high": null,
+   "source": "= live baseline DW (Control D51) − DW_residual; ET severe SCZ: 0.778 − 0.588 = 0.190"
+  },
+  {
+   "parameter": "Trial adherence — oral (Sensitivity scenario only)",
+   "value": 0.75,
+   "low": null,
+   "high": null,
+   "source": "Leucht 2017 dropout 40–60% embedded in ITT SMDs; used only by the Sensitivity scenario row 'Adherence relative to trial adherence'"
+  },
+  {
+   "parameter": "Trial adherence — LAI (Sensitivity scenario only)",
+   "value": 0.85,
+   "low": null,
+   "high": null,
+   "source": "Leucht 2017; LAI trial receipt; used only by the Sensitivity scenario row"
+  }
+ ],
+ "disabilityWeights": [
+  {
+   "key": "Lookup Key",
+   "dw": null,
+   "state": "GBD Health State",
+   "ui95": "95% UI"
+  },
+  {
+   "key": "Anxiety-Moderate-Severe",
+   "dw": 0.133,
+   "state": "Anxiety, moderate",
+   "ui95": "(0.091-0.186)"
+  },
+  {
+   "key": "Anxiety-Severe",
+   "dw": 0.523,
+   "state": "Anxiety, severe",
+   "ui95": "(0.362-0.677)"
+  },
+  {
+   "key": "Depression-Moderate-Severe",
+   "dw": 0.396,
+   "state": "MDD, moderate",
+   "ui95": "(0.267-0.531)"
+  },
+  {
+   "key": "Depression-Severe",
+   "dw": 0.658,
+   "state": "MDD, severe",
+   "ui95": "(0.477-0.807)"
+  },
+  {
+   "key": "Schizophrenia-Moderate-Severe",
+   "dw": 0.778,
+   "state": "Schizophrenia, acute",
+   "ui95": "(0.606-0.900)"
+  },
+  {
+   "key": "Schizophrenia-Severe",
+   "dw": 0.778,
+   "state": "Schizophrenia, acute",
+   "ui95": "(0.606-0.900)"
+  },
+  {
+   "key": "Schizophrenia-Residual",
+   "dw": 0.588,
+   "state": "Schizophrenia, residual",
+   "ui95": "(0.411-0.754)"
+  },
+  {
+   "key": "Bipolar Disorder-Moderate-Severe",
+   "dw": 0.492,
+   "state": "Bipolar, manic",
+   "ui95": "(0.341-0.646)"
+  },
+  {
+   "key": "Bipolar Disorder-Severe",
+   "dw": 0.492,
+   "state": "Bipolar, manic",
+   "ui95": "(0.341-0.646)"
+  },
+  {
+   "key": "Bipolar Disorder-Euthymic",
+   "dw": 0.032,
+   "state": "Bipolar, residual",
+   "ui95": "(0.018-0.051)"
+  }
+ ]
+}

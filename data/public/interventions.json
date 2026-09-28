@@ -1,0 +1,516 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Intervention Library",
+  "useCategoryAlignment": "17 Sep 2026: SCZ-15 -> Maintenance; SCZ-11 rrBucket -> class default (tools/apply_use_category_alignment_2026-09-17.py)"
+ },
+ "interventions": [
+  {
+   "intId": "SCZ-01",
+   "name": "Haloperidol (oral)",
+   "condition": "Schizophrenia",
+   "category": "FGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2 antagonist. High-potency typical antipsychotic.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "Yes",
+    "Nigeria": "Yes",
+    "Rwanda": "Yes"
+   },
+   "notes": "First-line for acute and maintenance treatment. High EPS risk.",
+   "emlCrosscheck": "Foundational FGA on all 5 lists. WHO 23rd EML core; Sect 22 NEML Nigeria; SA Adult Hospital STG; Ethiopia EML 2024; Rwanda STG 2022.",
+   "source": "WHO EML 2023; Nigeria NEML 2020 (7th ed)",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-02",
+   "name": "Chlorpromazine (oral)",
+   "condition": "Schizophrenia",
+   "category": "FGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2 antagonist. Low-potency typical antipsychotic.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "Yes",
+    "Nigeria": "Yes",
+    "Rwanda": "Yes"
+   },
+   "notes": "First-line alternative. More sedating, less EPS than haloperidol.",
+   "emlCrosscheck": "Foundational FGA on all 5 lists. WHO 23rd EML core; Sect 22 NEML Nigeria; SA STG (rapid tranq alternative); Ethiopia EML; Rwanda STG.",
+   "source": "WHO EML 2023; SA AHL STG 2024",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-03",
+   "name": "Risperidone (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Atypical antipsychotic.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "Yes",
+    "Nigeria": "Yes",
+    "Rwanda": "Yes"
+   },
+   "notes": "First-line SGA. WHO EML preferred. Moderate metabolic risk.",
+   "emlCrosscheck": "WHO 23rd EML core (added 2013). On SA EML, Ethiopia EML, Nigeria NEML 2020 (0.5/2/4 mg tabs), Rwanda STG (2-8 mg/day).",
+   "source": "WHO EML 2023; Nigeria NEML 2020",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-04",
+   "name": "Olanzapine (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Thienobenzodiazepine.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "Yes",
+    "Nigeria": "Yes",
+    "Rwanda": "Yes"
+   },
+   "notes": "Effective but high metabolic risk (weight gain, diabetes).",
+   "emlCrosscheck": "WHO 23rd EML core (added 2023 as therapeutic alternative under risperidone square box). SA EML; Rwanda STG (5-20 mg/day). Not on Ethiopia 7th EML or Nigeria NEML 2020 (predates 23rd revision).",
+   "source": "WHO EML 23rd 2023; Rwanda STG 2022",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-05",
+   "name": "Quetiapine (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Dibenzothiazepine.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "Yes",
+    "Nigeria": "No",
+    "Rwanda": "Yes"
+   },
+   "notes": "Second-line. Sedating. Used when others not tolerated.",
+   "emlCrosscheck": "WHO 23rd EML core (added 2023 as therapeutic alternative). SA EML hospital level; Rwanda STG (50-750 mg/day). Not on Ethiopia/Nigeria current EMLs.",
+   "source": "WHO EML 23rd 2023; Rwanda STG 2022",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-06",
+   "name": "Clozapine (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Treatment-resistant",
+   "mechanism": "D2/5-HT2A/D4 antagonist. Dibenzodiazepine.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "Yes",
+    "Nigeria": "Yes",
+    "Rwanda": "Yes"
+   },
+   "notes": "Reserved for treatment-resistant schizophrenia ONLY. Requires blood monitoring (agranulocytosis).",
+   "emlCrosscheck": "WHO 23rd EML complementary list (treatment-resistant only). SA EML; Ethiopia EML (limited public availability per Addis Ababa survey). Not on Nigeria NEML 2020 or Rwanda NEML.",
+   "source": "WHO EML 2023; Ethiopia EML 2024",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-07",
+   "name": "Flupenthixol decanoate (LAI)",
+   "condition": "Schizophrenia",
+   "category": "FGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2 antagonist. Thioxanthene. Long-acting depot.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "Yes"
+   },
+   "notes": "LAI for patients with adherence difficulties. 2-4 week injection cycle.",
+   "emlCrosscheck": "Not on WHO 23rd EML (fluphenazine LAI is the listed FGA LAI). On SA EML — most-used FGA LAI in SSA per literature. Not registered in Ethiopia/Nigeria/Rwanda EMLs.",
+   "source": "SA AHL STG 2024; SAHR 2024 procurement review",
+   "panelRecommended": "Not appraised",
+   "adminPerYr": 12
+  },
+  {
+   "intId": "SCZ-08",
+   "name": "Risperidone (LAI)",
+   "condition": "Schizophrenia",
+   "category": "SGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Microsphere depot.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "Yes",
+    "Nigeria": "No",
+    "Rwanda": "Yes"
+   },
+   "notes": "SGA LAI option. Biweekly injection. Higher drug cost.",
+   "emlCrosscheck": "WHO 23rd EML — listed as square-box therapeutic alternative under paliperidone palmitate 1-month LAI. NOT on any of 4 country EMLs — high cost, generally tertiary/private only.",
+   "source": "WHO EML 23rd 2023 (square-box alternative under paliperidone LAI)",
+   "panelRecommended": "Yes",
+   "adminPerYr": 26
+  },
+  {
+   "intId": "SCZ-09",
+   "name": "Paliperidone palmitate (LAI)",
+   "condition": "Schizophrenia",
+   "category": "SGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Active metabolite of risperidone.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Monthly LAI. Paliperidone = 9-OH-risperidone.",
+   "emlCrosscheck": "WHO 23rd EML core (1-month LAI added 2023). NOT on any of 4 country EMLs — high cost. Ethiopia literature confirms 'no registered SGA long-acting antipsychotic'.",
+   "source": "WHO EML 23rd 2023; RMHP Ethiopia 2023",
+   "panelRecommended": "Yes",
+   "adminPerYr": 12
+  },
+  {
+   "intId": "SCZ-10",
+   "name": "Cobenfy (KarXT)",
+   "condition": "Schizophrenia",
+   "category": "Novel",
+   "formulation": "oral capsule",
+   "use": "Initiation + maintenance",
+   "mechanism": "M1/M4 muscarinic agonist + anticholinergic.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "First non-D2 antipsychotic. FDA approved 2024. Very high cost.",
+   "emlCrosscheck": "Novel M1/M4 muscarinic agonist (FDA approved 2024). NOT on WHO EML or any national EML. Very high acquisition cost; not yet registered in Africa.",
+   "source": "FDA 2024 approval; not in any EML reviewed",
+   "panelRecommended": "No",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-11",
+   "name": "Olanzapine (IM, short-acting)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "IM injection",
+   "use": "Acute agitation",
+   "mechanism": "D2/5-HT2A antagonist. Rapid IM formulation.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Short-acting intramuscular formulation for acute agitation.",
+   "emlCrosscheck": "WHO 23rd EML core (added 2023; replaced IM chlorpromazine for acute agitation). NOT on country EMLs reviewed — SA uses zuclopenthixol acetate or haloperidol IM for acute.",
+   "source": "WHO EML 23rd 2023",
+   "panelRecommended": "Yes",
+   "adminPerYr": 20,
+   "rrBucket": "Class default (any antipsychotic)"
+  },
+  {
+   "intId": "SCZ-12",
+   "name": "Olanzapine (LAI)",
+   "condition": "Schizophrenia",
+   "category": "SGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Pamoate depot (Zyprexa Relprevv).",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Requires 3-hour post-injection observation (PDSS risk).",
+   "emlCrosscheck": "Not on WHO EML (paliperidone & risperidone LAIs are the listed SGA LAIs). Not on any national EML reviewed.",
+   "source": "Not in any EML reviewed",
+   "panelRecommended": "Yes",
+   "adminPerYr": 26
+  },
+  {
+   "intId": "SCZ-13",
+   "name": "Aripiprazole (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2 partial agonist / 5-HT2A antagonist.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "Yes"
+   },
+   "notes": "Low metabolic risk. Partial agonist mechanism.",
+   "emlCrosscheck": "WHO 23rd EML core (added 2023 as therapeutic alternative). SA EML — restricted to tertiary/quaternary care for cost containment. Not on Ethiopia/Nigeria/Rwanda EMLs.",
+   "source": "WHO EML 23rd 2023; SA AHL STG 2024",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-14",
+   "name": "Aripiprazole (IM)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "IM injection",
+   "use": "Acute agitation",
+   "mechanism": "D2 partial agonist. Rapid IM formulation.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "For acute agitation. Not for maintenance.",
+   "emlCrosscheck": "Acute IM aripiprazole NOT on WHO EML (only oral aripiprazole is listed). Not on any national EML reviewed.",
+   "source": "Not in any EML reviewed",
+   "panelRecommended": "Yes",
+   "adminPerYr": 20
+  },
+  {
+   "intId": "SCZ-15",
+   "name": "Aripiprazole (LAI)",
+   "condition": "Schizophrenia",
+   "category": "SGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2 partial agonist. Monthly depot (Abilify Maintena).",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Monthly LAI. Low metabolic risk.",
+   "emlCrosscheck": "Not on WHO EML (paliperidone & risperidone LAIs are the listed SGA LAIs). Not on any national EML reviewed.",
+   "source": "Not in any EML reviewed",
+   "panelRecommended": "Yes",
+   "adminPerYr": 12
+  },
+  {
+   "intId": "SCZ-16",
+   "name": "Cariprazine (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2/D3 partial agonist. Piperazine derivative.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Unique D3 affinity. May help negative symptoms.",
+   "emlCrosscheck": "Not on WHO EML or any national EML reviewed. Patent-protected, high cost.",
+   "source": "Not in any EML reviewed",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-17",
+   "name": "Lurasidone (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2/5-HT2A antagonist. Benzisothiazol derivative.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Low metabolic risk. Must take with food (≥350 kcal).",
+   "emlCrosscheck": "Not on WHO EML or any national EML reviewed.",
+   "source": "Not in any EML reviewed",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-18",
+   "name": "Lumateperone (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2 partial agonist / 5-HT2A antagonist / SERT inhibitor.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Multi-target. Very low metabolic risk. High acquisition cost.",
+   "emlCrosscheck": "Novel SGA (FDA 2019). Not on WHO EML or any national EML.",
+   "source": "Not in any EML reviewed",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-19",
+   "name": "Amisulpride (oral)",
+   "condition": "Schizophrenia",
+   "category": "SGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2/D3 antagonist. Benzamide derivative.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Effective for negative symptoms at low doses. Dose-dependent profile.",
+   "emlCrosscheck": "Not on WHO EML. On SA EML — restricted to tertiary/quaternary care. Not on Ethiopia/Nigeria/Rwanda EMLs.",
+   "source": "SA AHL STG 2024",
+   "panelRecommended": "Yes",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-20",
+   "name": "Zuclopenthixol decanoate (LAI)",
+   "condition": "Schizophrenia",
+   "category": "FGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2 antagonist. Thioxanthene. Long-acting depot.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "Yes"
+   },
+   "notes": "FGA LAI alternative. 2-4 week injection cycle.",
+   "emlCrosscheck": "WHO 23rd EML — listed as square-box therapeutic alternative under fluphenazine decanoate LAI (alongside haloperidol decanoate). On SA EML as alternative FGA LAI. Not on Ethiopia/Nigeria/Rwanda EMLs.",
+   "source": "WHO EML 23rd 2023 (square-box alternative under fluphenazine LAI); SA AHL STG 2024",
+   "panelRecommended": "Not appraised",
+   "adminPerYr": 12
+  },
+  {
+   "intId": "SCZ-21",
+   "name": "Fluphenazine decanoate (LAI)",
+   "condition": "Schizophrenia",
+   "category": "FGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2 antagonist. Phenothiazine long-acting depot.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "WHO EML FGA LAI; Nigeria #2 procurement spend; 25mg/ml amp, monthly",
+   "emlCrosscheck": "WHO 23rd EML: fluphenazine decanoate is THE listed FGA LAI (haloperidol decanoate and zuclopenthixol decanoate are square-box alternatives under it). Procured at scale in Nigeria but not NEML-listed; not on SA/ETH/RWA EMLs reviewed.",
+   "source": "WHO EML 2023; Demand Estimate Model v4 Med Defaults",
+   "panelRecommended": "Yes",
+   "adminPerYr": 12
+  },
+  {
+   "intId": "SCZ-22",
+   "name": "Haloperidol (IM, short-acting)",
+   "condition": "Schizophrenia",
+   "category": "FGA",
+   "formulation": "IM injection",
+   "use": "Acute agitation",
+   "mechanism": "D2 antagonist. Rapid IM formulation (lactate 5mg/ml).",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "Yes",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Cheapest acute agitation option; realistic comparator for olanzapine IM",
+   "emlCrosscheck": "Oral and decanoate haloperidol are WHO EML-listed; the short-acting IM is not. ETH Yes per STG emergency phase; not separately listed on SA/NGA/RWA EMLs reviewed.",
+   "source": "ETH STG (emergency phase); Demand Estimate Model v4",
+   "panelRecommended": "Yes",
+   "adminPerYr": 20
+  },
+  {
+   "intId": "SCZ-23",
+   "name": "Trifluoperazine (oral)",
+   "condition": "Schizophrenia",
+   "category": "FGA",
+   "formulation": "oral tablet",
+   "use": "Initiation + maintenance",
+   "mechanism": "D2 antagonist. Piperazine phenothiazine.",
+   "whoEml": "No",
+   "nationalEml": {
+    "South Africa": "Yes",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "No"
+   },
+   "notes": "Real procurement shares NG 5.4% / SA 3.6% / ET 0.2% (Demand Model); 20 mg/day WHO DDD",
+   "emlCrosscheck": "Not on WHO 23rd EML. SA: procured, STG presence limited (note). Not on ETH/NGA/RWA EMLs reviewed.",
+   "source": "Demand Estimate Model v4 Med Defaults; WHO DDD",
+   "panelRecommended": "n/a — outside consensus scope",
+   "adminPerYr": null
+  },
+  {
+   "intId": "SCZ-24",
+   "name": "Haloperidol decanoate (LAI)",
+   "condition": "Schizophrenia",
+   "category": "FGA LAI",
+   "formulation": "LAI injection",
+   "use": "Maintenance",
+   "mechanism": "D2 antagonist. Decanoate depot, 50mg/ml.",
+   "whoEml": "Yes",
+   "nationalEml": {
+    "South Africa": "No",
+    "Ethiopia": "No",
+    "Nigeria": "No",
+    "Rwanda": "Yes"
+   },
+   "notes": "Lowest-cost LAI comparator; ET/RW procurement data",
+   "emlCrosscheck": "WHO 23rd EML: square-box therapeutic alternative under fluphenazine decanoate. RWA STG: decanoate 50–200mg/month. Not on SA/ETH/NGA EMLs reviewed.",
+   "source": "WHO EML 2023 (square-box under fluphenazine dec.); RWA STG 2022",
+   "panelRecommended": "Yes",
+   "adminPerYr": 12
+  }
+ ]
+}

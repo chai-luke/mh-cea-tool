@@ -1,0 +1,250 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Src-Efficacy"
+ },
+ "efficacy": [
+  {
+   "intId": "SCZ-01",
+   "name": "Haloperidol (oral)",
+   "smd": 0.47,
+   "smdSource": "Huhn 2019 Lancet 394:939 (Fig 2; pending figure-level recheck)",
+   "adherenceRef": 0.64,
+   "adherenceRefSource": "Ascher-Svanum 2008, Patient Prefer Adherence 2:67-77",
+   "smdHuhn2019": 0.45,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-02",
+   "name": "Chlorpromazine (oral)",
+   "smd": 0.44,
+   "smdSource": "Huhn 2019 Lancet 394:939 (Fig 2; pending figure-level recheck)",
+   "adherenceRef": 0.64,
+   "adherenceRefSource": "Ascher-Svanum 2008, Patient Prefer Adherence 2:67-77",
+   "smdHuhn2019": 0.38,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-03",
+   "name": "Risperidone (oral)",
+   "smd": 0.55,
+   "smdSource": "Huhn 2019 Lancet 394:939",
+   "adherenceRef": 0.64,
+   "adherenceRefSource": "Ascher-Svanum 2008, Patient Prefer Adherence 2:67-77",
+   "smdHuhn2019": 0.55,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-04",
+   "name": "Olanzapine (oral)",
+   "smd": 0.56,
+   "smdSource": "Huhn 2019 Lancet 394:939",
+   "adherenceRef": 0.64,
+   "adherenceRefSource": "Ascher-Svanum 2008, Patient Prefer Adherence 2:67-77",
+   "smdHuhn2019": 0.56,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-05",
+   "name": "Quetiapine (oral)",
+   "smd": 0.42,
+   "smdSource": "Huhn 2019 Lancet 394:939 (Fig 2; pending figure-level recheck)",
+   "adherenceRef": 0.64,
+   "adherenceRefSource": "Ascher-Svanum 2008, Patient Prefer Adherence 2:67-77",
+   "smdHuhn2019": 0.39,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-06",
+   "name": "Clozapine (oral)",
+   "smd": 0.89,
+   "smdSource": "Huhn 2019 Lancet 394:939 (−0.89, 95%CrI −1.08 to −0.71; acute multi-episode NON-treatment-resistant population)",
+   "adherenceRef": 0.64,
+   "adherenceRefSource": "Ascher-Svanum 2008, Patient Prefer Adherence 2:67-77",
+   "smdHuhn2019": 0.89,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-07",
+   "name": "Flupenthixol decanoate (LAI)",
+   "smd": 0.44,
+   "smdSource": "= oral flupentixol SMD, Huhn 2019 (molecule rule; LAI advantage via adherence)",
+   "adherenceRef": 0.84,
+   "adherenceRefSource": "LAI guaranteed delivery",
+   "smdHuhn2019": 0.44,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-08",
+   "name": "Risperidone (LAI)",
+   "smd": 0.55,
+   "smdSource": "= oral risperidone SMD, Huhn 2019 (molecule rule; Wang 2024 Schizophr Bull 50:132 confirms no LAI-vs-oral efficacy difference)",
+   "adherenceRef": 0.84,
+   "adherenceRefSource": "LAI near-perfect adherence",
+   "smdHuhn2019": 0.55,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-09",
+   "name": "Paliperidone palmitate (LAI)",
+   "smd": 0.5,
+   "smdSource": "= oral paliperidone SMD, Huhn 2019 (molecule rule; pending figure-level recheck)",
+   "adherenceRef": 0.84,
+   "adherenceRefSource": "LAI monthly injection",
+   "smdHuhn2019": 0.5,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-10",
+   "name": "Cobenfy (KarXT)",
+   "smd": 0.56,
+   "smdSource": "Fabiano 2025 Eur Neuropsychopharmacol 92:62 (PANSS total −0.56, −0.72 to −0.40)",
+   "adherenceRef": 0.86,
+   "adherenceRefSource": "Hampel et al. *8 month study, not 1 year",
+   "smdHuhn2019": 0.56,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-11",
+   "name": "Olanzapine (IM, short-acting)",
+   "smd": 0.56,
+   "smdSource": "= oral olanzapine SMD (molecule rule; no acute-scale NMA exists for short-acting IM)",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": null,
+   "smdHuhn2019": 0.56,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-12",
+   "name": "Olanzapine (LAI)",
+   "smd": 0.56,
+   "smdSource": "= oral olanzapine SMD (molecule rule)",
+   "adherenceRef": 0.84,
+   "adherenceRefSource": "LAI near-perfect delivery",
+   "smdHuhn2019": 0.56,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-13",
+   "name": "Aripiprazole (oral)",
+   "smd": 0.48,
+   "smdSource": "Zheng 2016 J Clin Psychopharmacol 36:628 — ADJUNCTIVE-therapy meta-analysis (retained per model owner decision 2026-08-20)",
+   "adherenceRef": 0.6,
+   "adherenceRefSource": "SA IC default oral",
+   "smdHuhn2019": 0.41,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-14",
+   "name": "Aripiprazole (IM)",
+   "smd": 0.48,
+   "smdSource": "= aripiprazole molecule value (see SCZ-13)",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": "Injectable; observed admin",
+   "smdHuhn2019": 0.41,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-15",
+   "name": "Aripiprazole (LAI)",
+   "smd": 0.48,
+   "smdSource": "= aripiprazole molecule value (see SCZ-13)",
+   "adherenceRef": 0.95,
+   "adherenceRefSource": "LAI monthly injection",
+   "smdHuhn2019": 0.41,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-16",
+   "name": "Cariprazine (oral)",
+   "smd": 0.37,
+   "smdSource": "Zhao 2018 J Clin Psychopharmacol 38:55 (PANSS total vs placebo)",
+   "adherenceRef": 0.6,
+   "adherenceRefSource": "Oral SGA",
+   "smdHuhn2019": 0.36,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-17",
+   "name": "Lurasidone (oral)",
+   "smd": 0.33,
+   "smdSource": "Huhn 2019 Lancet 394:939 (Fig 2; pending figure-level recheck). NOTE: previous 0.14 was lumateperone's SMD from Peng 2024 — wrong drug",
+   "adherenceRef": 0.55,
+   "adherenceRefSource": "Requires food; may reduce adherence",
+   "smdHuhn2019": 0.33,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-18",
+   "name": "Lumateperone (oral)",
+   "smd": 0.2,
+   "smdSource": "Smith 2026 Special consideration, band floor 0.2–0.45 (small number of trials) · underlying: Peng 2024 0.14 = tornado low bound.",
+   "adherenceRef": 0.6,
+   "adherenceRefSource": "Oral; favorable SE profile",
+   "smdHuhn2019": 0.3,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-19",
+   "name": "Amisulpride (oral)",
+   "smd": 0.73,
+   "smdSource": "Huhn 2019 Lancet 394:939",
+   "adherenceRef": 0.6,
+   "adherenceRefSource": "Oral SGA",
+   "smdHuhn2019": 0.73,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-20",
+   "name": "Zuclopenthixol decanoate (LAI)",
+   "smd": 0.44,
+   "smdSource": "= oral zuclopenthixol SMD, Huhn 2019 (molecule rule; pending figure-level recheck). NOTE: previous 0.64 was unsourced",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": "LAI guaranteed delivery",
+   "smdHuhn2019": 0.47,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-21",
+   "name": "Fluphenazine decanoate (LAI)",
+   "smd": 0.47,
+   "smdSource": "Smith et al. 2026: no major efficacy differences across antipsychotics, differences driven by side-effects; FGA-class anchor = haloperidol (Huhn 2019 −0.47; panel ES 0.44); LAI ≈ oral per Kishimoto 2014 (FGA-LAI relapse RR 0.82). Huhn direct fluphenazine estimate (−0.24, CrI −0.62 to 0.13, n=53, non-significant) = tornado LOW bound only (owner ruling 2026-09-06).",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": "LAI guaranteed delivery",
+   "smdHuhn2019": 0.47,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-22",
+   "name": "Haloperidol (IM, short-acting)",
+   "smd": 0.47,
+   "smdSource": "Smith et al. 2026 framework · underlying: haloperidol molecule, Huhn 2019 SMD −0.47; acute agitation RR 1.78 (Cochrane, panel agitation appraisal).",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": "LAI guaranteed delivery",
+   "smdHuhn2019": 0.47,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-23",
+   "name": "Trifluoperazine (oral)",
+   "smd": 0.47,
+   "smdSource": "Smith et al. 2026: no major efficacy differences; FGA-class anchor = haloperidol (Huhn 2019 −0.47). Huhn direct trifluoperazine estimate (−0.24, CrI −0.53 to 0.05, n=123, non-significant) = tornado LOW bound only (owner ruling 2026-09-06).",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": "LAI guaranteed delivery",
+   "smdHuhn2019": 0.47,
+   "notes": null
+  },
+  {
+   "intId": "SCZ-24",
+   "name": "Haloperidol decanoate (LAI)",
+   "smd": 0.47,
+   "smdSource": "Smith et al. 2026 framework · underlying: haloperidol molecule, Huhn 2019 SMD −0.47; LAI ≈ oral per Kishimoto 2014 (FGA-LAI RR 0.82) and McEvoy JAMA 2014 (vs paliperidone HR 0.98).",
+   "adherenceRef": 0.9,
+   "adherenceRefSource": "LAI guaranteed delivery",
+   "smdHuhn2019": 0.44,
+   "notes": null
+  }
+ ]
+}

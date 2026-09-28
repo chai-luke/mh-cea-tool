@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this tool or its data, please cite it as below."
+type: software
+title: "Antipsychotic Medication Cost-Effectiveness and Budget Tool"
+version: "vS (validation version, September 2026)"
+date-released: 2026-09-30
+authors:
+  - name: "Clinton Health Access Initiative, Mental Health Team"
+  - family-names: "Aldridge"
+    given-names: "Luke"
+    affiliation: "Clinton Health Access Initiative"
+repository-code: "https://github.com/chai-luke/mh-cea-tool"
+url: "https://PLACEHOLDER.example.org"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >-
+  Browser-based cost-effectiveness and budget impact model for antipsychotic
+  medicines in psychosis care, with country inputs for Ethiopia, Nigeria, Rwanda
+  and South Africa. Every input is editable and exportable so ministries can run
+  the model on their own data. Public version, validation release September 2026.
+keywords:
+  - cost-effectiveness analysis
+  - budget impact
+  - antipsychotics
+  - schizophrenia
+  - mental health
+  - health technology assessment
+  - essential medicines

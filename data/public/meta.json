@@ -1,0 +1,24 @@
+{
+ "workbook": "MH_CEA_Tool_vS.xlsx",
+ "workbook_saved": "2026-09-15T16:19:50",
+ "extracted": "2026-09-17T11:38:24",
+ "modelVersion": "vS",
+ "versionStamp": "vS  ·  September 2026  ·  Clinton Health Access Initiative",
+ "changeLogLast": [
+  "v31 — UI build ✓",
+  "v31 — full-cost build",
+  "v31 — full-cost build (fix)",
+  "v31 — consumed default + comparator flip",
+  "v31 — repair",
+  "v31 — NG salary rebuild",
+  "v31 — engine changes",
+  "v31 — QC battery snapshot",
+  "v32 — FINISH / validation release",
+  "v32 — FINISH close-out (Parts C–D)"
+ ],
+ "publicBuild": {
+  "disclosure": "label-only",
+  "label": "Public version",
+  "built": "2026-09-28"
+ }
+}

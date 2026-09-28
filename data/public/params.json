@@ -1,0 +1,769 @@
+{
+ "_meta": {
+  "workbook": "MH_CEA_Tool_vS.xlsx",
+  "workbook_saved": "2026-09-15T16:19:50",
+  "extracted": "2026-09-17T11:38:24",
+  "sheet": "Control + Var + Setup"
+ },
+ "params": [
+  {
+   "paramId": "P_COUNTRY",
+   "label": "Country",
+   "live": "Ethiopia",
+   "default": "Ethiopia",
+   "override": "Ethiopia",
+   "unit": null,
+   "source": "Selection",
+   "row": 10
+  },
+  {
+   "paramId": "P_CONDITION",
+   "label": "Condition",
+   "live": "Schizophrenia",
+   "default": "Schizophrenia",
+   "override": null,
+   "unit": null,
+   "source": "Selection",
+   "row": 11
+  },
+  {
+   "paramId": "P_SEVERITY",
+   "label": "Severity",
+   "live": "Severe",
+   "default": "Severe",
+   "override": null,
+   "unit": null,
+   "source": "Selection",
+   "row": 12
+  },
+  {
+   "paramId": "P_METHOD",
+   "label": "Modeling approach",
+   "live": "Direct estimates",
+   "default": "Direct estimates",
+   "override": null,
+   "unit": null,
+   "source": "Selection",
+   "row": 13
+  },
+  {
+   "paramId": "P_HORIZON",
+   "label": "Time horizon",
+   "live": 1,
+   "default": 1,
+   "override": null,
+   "unit": "years",
+   "source": "Selection",
+   "row": 14
+  },
+  {
+   "paramId": "P_DISCOUNT",
+   "label": "Discount rate",
+   "live": 0.03,
+   "default": 0.03,
+   "override": null,
+   "unit": "%",
+   "source": "WHO-CHOICE",
+   "row": 15
+  },
+  {
+   "paramId": "P_COST_YEAR",
+   "label": "Cost year",
+   "live": 2026,
+   "default": 2026,
+   "override": null,
+   "unit": "year",
+   "source": "Current",
+   "row": 16
+  },
+  {
+   "paramId": "P_ADMIN_TOGGLE",
+   "label": "Include admin costs?",
+   "live": "Yes",
+   "default": "Yes",
+   "override": null,
+   "unit": null,
+   "source": "Selection",
+   "row": 17
+  },
+  {
+   "paramId": "P_ADMIN_PCT",
+   "label": "Admin overhead",
+   "live": 0.12,
+   "default": 0.12,
+   "override": 0.12,
+   "unit": "%",
+   "source": "SA Mental Health Investment Case final report (2021), main text pp. 38–40",
+   "row": 18
+  },
+  {
+   "paramId": "P_CURRENCY_SYM",
+   "label": "Currency symbol",
+   "live": "$",
+   "default": "$",
+   "override": null,
+   "unit": null,
+   "source": "Selection (USD/LCU toggle)",
+   "row": 19
+  },
+  {
+   "paramId": "P_CURRENCY_CODE",
+   "label": "Currency code",
+   "live": "USD",
+   "default": "USD",
+   "override": null,
+   "unit": null,
+   "source": "Selection (USD/LCU toggle)",
+   "row": 20
+  },
+  {
+   "paramId": "P_CE_METHOD",
+   "label": "CE threshold method",
+   "live": "Ochalek (supply-side)",
+   "default": "Ochalek (supply-side)",
+   "override": null,
+   "unit": null,
+   "source": "Var J7:J11 (menu) → Src-CE Thresholds blocks: Pichon rows 13:16, Ochalek rows 22:25, 1× GDP rows 6:9, National (SA) row 30. Custom reads Selection E11 and falls back to 1× GDP with a visible dashboard warning.",
+   "row": 24
+  },
+  {
+   "paramId": "P_CE_THRESHOLD",
+   "label": "CE threshold value",
+   "live": 261.90000000000003,
+   "default": null,
+   "override": 0,
+   "unit": "$/DALY",
+   "source": "Src-CE Thresholds",
+   "row": 25
+  },
+  {
+   "paramId": "P_COMPARATOR",
+   "label": "CE comparator",
+   "live": "Current treatment",
+   "default": "No treatment",
+   "override": "Current treatment",
+   "unit": "text",
+   "source": "Selection tab. 'No treatment' = average CER vs untreated baseline. 'Current treatment' = incremental ICER vs the standard-of-care drug for each use category (Src-Comparators).",
+   "row": 26
+  },
+  {
+   "paramId": "P_FX",
+   "label": "FX rate applied to money (LCU per USD)",
+   "live": 1,
+   "default": 1,
+   "override": null,
+   "unit": "LCU/USD",
+   "source": "Src-CE Thresholds FX table (fx_countries / fx_rates). THE currency switch: 1 when USD is selected, else the country rate. Applied exactly ONCE per cost family at its effective column — medication (Src-Med Costs AN), HRH (Src-HRH Unit Costs L), inpatient (Control D47), side-effects (Calc-SE E), thresholds (D24, numeric branches only), BIA money pulls (Calc-BIA C23/C24). Never applied to DALYs, percentages, adherence or admin %. QC A26 proves no consumer is missed or double-counted.",
+   "row": 27
+  },
+  {
+   "paramId": "P_RW_MULT",
+   "label": "Real-world effectiveness multiplier",
+   "live": 1,
+   "default": 1,
+   "override": null,
+   "unit": "%",
+   "source": "Set to 1.0 (2026-08-20): the previous 0.8 had no source (Singla 2017 is psychological-therapy literature) and double-counted adherence, the main efficacy-effectiveness mechanism for medications (WHO-CHOICE applies a single ×⅔ adjustment). 0.8 retained as a one-way sensitivity scenario.",
+   "row": 30
+  },
+  {
+   "paramId": "P_ADH_ORAL",
+   "label": "Default oral medication adherence",
+   "live": 0.6,
+   "default": 0.6,
+   "override": null,
+   "unit": "%",
+   "source": "Ascher-Svanum 2008 (58% overall, MPR>80%); Lacro 2002 (50–59%); WHO/Sabaté 2003 (~50% long-term therapies). 0.60 = upper-middle of the band.",
+   "row": 31
+  },
+  {
+   "paramId": "P_ADH_LAI",
+   "label": "Default LAI adherence",
+   "live": 0.85,
+   "default": 0.85,
+   "override": null,
+   "unit": "%",
+   "source": "Einarson 2012, Ann Gen Psychiatry 11:18, Table 1 (observed LAI receipt 0.823–0.872); set at the upper end per owner decision 2026-08-20; tornado 0.75–0.95.",
+   "row": 32
+  },
+  {
+   "paramId": "P_ADH_IM",
+   "label": "Default short-acting IM adherence",
+   "live": 1,
+   "default": 1,
+   "override": null,
+   "unit": "%",
+   "source": "Administered by staff per acute episode; utilisation carried by doses/yr (Src-Med Costs K)",
+   "row": 33
+  },
+  {
+   "paramId": "P_ADH_COBENFY",
+   "label": "Cobenfy (KarXT) adherence",
+   "live": 0.6,
+   "default": 0.6,
+   "override": null,
+   "unit": "%",
+   "source": "Owner decision 2026-09-14: set equal to oral SGA adherence (0.60). Earlier 0.55 rested on HIC discontinuation data (ICER 2024 Table 3.5; EMERGENT-4/5), retained as the low tornado bound 0.45; high bound 0.75.",
+   "row": 34
+  },
+  {
+   "paramId": "P_COMBO_METHOD",
+   "label": "Combination effect method",
+   "live": "Meta-analytic",
+   "default": "Meta-analytic",
+   "override": null,
+   "unit": null,
+   "source": "Cuijpers et al. 2020",
+   "row": 35
+  },
+  {
+   "paramId": "P_DPSA_NOTCH",
+   "label": "DPSA notch (benefits markup)",
+   "live": 0.37,
+   "default": 0.37,
+   "override": null,
+   "unit": "%",
+   "source": "DPSA; SA Mental Health Investment Case final report (2021), main text pp. 38–40",
+   "row": 39
+  },
+  {
+   "paramId": "P_DOC_CONTACT",
+   "label": "Doctor patient-contact time",
+   "live": 0.8,
+   "default": 0.8,
+   "override": null,
+   "unit": "%",
+   "source": "SA Mental Health Investment Case final report (2021), main text pp. 38–40",
+   "row": 40
+  },
+  {
+   "paramId": "P_NONDOC_CONTACT",
+   "label": "Non-doctor patient-contact time",
+   "live": 0.6,
+   "default": 0.6,
+   "override": null,
+   "unit": "%",
+   "source": "SA Mental Health Investment Case final report (2021), main text pp. 38–40",
+   "row": 41
+  },
+  {
+   "paramId": "P_WORK_HRS",
+   "label": "Working hours per year",
+   "live": 2080,
+   "default": 2080,
+   "override": null,
+   "unit": "hrs/yr",
+   "source": "2,080-hr work year ratified 2026-08-24 (CHAI review); replaces the SA IC 1,950-hr assumption",
+   "row": 42
+  },
+  {
+   "paramId": "P_INPT_SCZ_ACUTE",
+   "label": "% Admission",
+   "live": 0.5,
+   "default": 0.5,
+   "override": null,
+   "unit": "%",
+   "source": "SA Mental Health Investment Case final report (2021), main text pp. 38–40",
+   "row": 46
+  },
+  {
+   "paramId": "P_INPT_SCZ_LOS",
+   "label": "Avg LOS (days)",
+   "live": 30,
+   "default": 30,
+   "override": null,
+   "unit": "days",
+   "source": "SA Mental Health Investment Case final report (2021), main text pp. 38–40",
+   "row": 47
+  },
+  {
+   "paramId": "P_INPT_SCZ_COSTDAY",
+   "label": "Cost/Day ($)",
+   "live": 1.5624392163315077,
+   "default": 1.5624392163315077,
+   "override": null,
+   "unit": "$",
+   "source": "SA IC mmc1, Int. 21",
+   "row": 48
+  },
+  {
+   "paramId": "P_ADM_DIFF",
+   "label": "Apply differential admissions by formulation? (scenario — SUPERSEDED by §16)",
+   "live": "No",
+   "default": "No",
+   "override": null,
+   "unit": "Yes/No",
+   "source": "SUPERSEDED by the hospitalisation channel (§16, owner 2026-09-11) — active only when that channel is off; kept for reversibility. When P_HOSP_EFFECT = Yes the factor is forced to 1.0: the LAI admission credit is now carried by adherence inside Calc-Direct AJ (the derived LAI/oral ratio ≈0.78 reproduces the Swedish/Finnish register ratio), so a second formulation factor would double count — QC A39 fails loudly ('double count') if both are switched on. Original sources: Kishimoto 2013 mirror-image MA; Tiihonen/Taipale registers.",
+   "row": 49
+  },
+  {
+   "paramId": "P_BASELINE_DW",
+   "label": "Baseline disability weight (selected condition)",
+   "live": 0.778,
+   "default": null,
+   "override": null,
+   "unit": "DW",
+   "source": "Computed",
+   "row": 52
+  },
+  {
+   "paramId": "P_HRH_METHOD",
+   "label": "HRH costing method",
+   "live": "Ingredient-based",
+   "default": "Ingredient-based",
+   "override": null,
+   "unit": null,
+   "source": null,
+   "row": 56
+  },
+  {
+   "paramId": "P_CPI_INFLATE",
+   "label": "Inflate costs to current year?",
+   "live": "No",
+   "default": "No",
+   "override": null,
+   "unit": "Yes/No",
+   "source": null,
+   "row": 60
+  },
+  {
+   "paramId": "P_CPI_FACTOR",
+   "label": "CPI adjustment factor",
+   "live": 1,
+   "default": 1,
+   "override": null,
+   "unit": "ratio",
+   "source": "=Src-CPI / Control",
+   "row": 61
+  },
+  {
+   "paramId": "P_COST_BASE_YR",
+   "label": "Cost data base year",
+   "live": 2023,
+   "default": 2023,
+   "override": null,
+   "unit": "year",
+   "source": "User input",
+   "row": 62
+  },
+  {
+   "paramId": "P_COST_TARGET_YR",
+   "label": "Target cost year",
+   "live": 2025,
+   "default": 2025,
+   "override": null,
+   "unit": "year",
+   "source": "User input",
+   "row": 63
+  },
+  {
+   "paramId": "P_BIA_HORIZON",
+   "label": "BIA time horizon",
+   "live": 5,
+   "default": 5,
+   "override": null,
+   "unit": "years",
+   "source": null,
+   "row": 84
+  },
+  {
+   "paramId": "P_BIA_DETECTION_GROWTH",
+   "label": "Annual detection rate growth (additive)",
+   "live": 0.02,
+   "default": 0.02,
+   "override": null,
+   "unit": "%/yr",
+   "source": "Detection rate increases by 2pp/yr as services scale",
+   "row": 85
+  },
+  {
+   "paramId": "P_BIA_INIT_DROPOUT_HALF",
+   "label": "Initiation dropout half-life",
+   "live": 6,
+   "default": 6,
+   "override": null,
+   "unit": "months",
+   "source": "Kishimoto 2021 — ~50% antipsychotic discontinuation by 6mo",
+   "row": 86
+  },
+  {
+   "paramId": "P_BIA_MAINT_RETENTION",
+   "label": "Maintenance retention rate (annual)",
+   "live": 0.5,
+   "default": 0.5,
+   "override": null,
+   "unit": "%",
+   "source": "Linear dropout: Eff PY = N × (1+R)/2",
+   "row": 87
+  },
+  {
+   "paramId": "P_BIA_TRS_PCT",
+   "label": "Treatment-resistant sub-population %",
+   "live": 0.3,
+   "default": 0.3,
+   "override": null,
+   "unit": "%",
+   "source": "Howes 2017 — ~30% of SCZ patients are treatment-resistant",
+   "row": 88
+  },
+  {
+   "paramId": "P_BIA_ACUTE_PCT",
+   "label": "Acute agitation episode % (annual)",
+   "live": 0.15,
+   "default": 0.15,
+   "override": null,
+   "unit": "%",
+   "source": "Matches existing P_INPT_SCZ_ACUTE",
+   "row": 89
+  },
+  {
+   "paramId": "P_BIA_DETECTION_OVERRIDE",
+   "label": "Override baseline detection rate (blank = use Src-Epi)",
+   "live": "(use Src-Epi)",
+   "default": "(use Src-Epi)",
+   "override": null,
+   "unit": "% or text",
+   "source": "Blank = use Src-Epi Section 3 baseline",
+   "row": 90
+  },
+  {
+   "paramId": "P_BIA_DIAG_CONS",
+   "label": "Diagnosis rate — Conservative",
+   "live": 0.3,
+   "default": 0.5,
+   "override": 0.7,
+   "unit": "0.9",
+   "source": "% of EPI need detected/diagnosed",
+   "row": 97
+  },
+  {
+   "paramId": "P_BIA_TXINIT",
+   "label": "Tx initiation rate",
+   "live": 0.5,
+   "default": 0.65,
+   "override": 0.75,
+   "unit": "0.8",
+   "source": "% of diagnosed that start Tx (applied to new cohort)",
+   "row": 98
+  },
+  {
+   "paramId": "P_BIA_RETENTION",
+   "label": "Maintenance retention rate",
+   "live": 0.4,
+   "default": 0.5,
+   "override": 0.6,
+   "unit": "0.7",
+   "source": "Annual retention on Tx (linear dropout)",
+   "row": 99
+  },
+  {
+   "paramId": "P_BIA_WASTAGE",
+   "label": "Wastage / buffer uplift on procurement",
+   "live": 0.15,
+   "default": 0.15,
+   "override": null,
+   "unit": "%",
+   "source": "Demand Model v4, Line 5: doses procured = doses consumed × (1 + buffer). Default 15%.",
+   "row": 103
+  },
+  {
+   "paramId": "P_BIA_COST_BASIS",
+   "label": "CEA cost basis for BIA",
+   "live": "Medication only",
+   "default": "Medication only",
+   "override": "Medication only",
+   "unit": "text",
+   "source": "Per-patient annual cost feeding the BIA: 'Medication only' (Results-Detailed med cost) or 'Total' (incl. HRH, side-effects, admin).",
+   "row": 104
+  },
+  {
+   "paramId": "P_BIA_ADHERENCE",
+   "label": "Apply adherence adjustment?",
+   "live": "Yes",
+   "default": "Yes",
+   "override": "Yes",
+   "unit": "Yes/No",
+   "source": "Yes = procure only doses consumed, using product-specific adherence from §3 (oral 60%, LAI 85%).  No = procure full course (100%).",
+   "row": 105
+  },
+  {
+   "paramId": "P_BIA_SPLIT_1",
+   "label": "Initiation + Maintenance",
+   "live": 0.55,
+   "default": 0.55,
+   "override": null,
+   "unit": "%",
+   "source": "Cabinet slot 1 — editable assumption",
+   "row": 109
+  },
+  {
+   "paramId": "P_BIA_SPLIT_2",
+   "label": "Maintenance",
+   "live": 0.15,
+   "default": 0.15,
+   "override": null,
+   "unit": "%",
+   "source": "Cabinet slot 2 — editable assumption",
+   "row": 110
+  },
+  {
+   "paramId": "P_BIA_SPLIT_3",
+   "label": "Treatment-resistant",
+   "live": 0.15,
+   "default": 0.15,
+   "override": null,
+   "unit": "%",
+   "source": "Cabinet slot 3 — editable assumption",
+   "row": 111
+  },
+  {
+   "paramId": "P_BIA_SPLIT_4",
+   "label": "Acute agitation",
+   "live": 0.15,
+   "default": 0.15,
+   "override": null,
+   "unit": "%",
+   "source": "Cabinet slot 4 — editable assumption",
+   "row": 112
+  },
+  {
+   "paramId": "P_BIA_SPLIT_5",
+   "label": null,
+   "live": 0,
+   "default": 0,
+   "override": null,
+   "unit": "%",
+   "source": "Cabinet slot 5 — empty for Schizophrenia",
+   "row": 113
+  },
+  {
+   "paramId": "P_BIA_MIX_BASIS",
+   "label": "Product-mix basis for BIA budgets",
+   "live": "Current tx (incumbent)",
+   "default": "Current tx (incumbent)",
+   "override": null,
+   "unit": "text",
+   "source": "Current tx (incumbent) = country product mix (Src-Demand MIX DEFAULTS). CE-optimised = dashboard cabinet winner at 100% per category. Global selector on Budget Impact; per-category override in each mix table.",
+   "row": 116
+  },
+  {
+   "paramId": "P_MORT_CHANNEL",
+   "label": "Apply survival (mortality) benefit?",
+   "live": "Yes",
+   "default": "Yes",
+   "override": "Yes",
+   "unit": "Yes/No",
+   "source": "Aymerich 2024 meta-analysis (17 studies); Taipale 2020 World Psychiatry (FIN20 HR 0.48); Tiihonen 2009/2017 (FIN11 HR 0.81); Correll 2022 (treated-vs-untreated HR 0.71); clozapine HR 0.74 (register series). Observational GRADE — RCT meta (Kishimoto 2016) found no difference. Base case from vS (owner decision 2026-09-14): survival benefit included, all three layers (any antipsychotic vs none HR 0.71; extra LAI-vs-oral OR 0.79; extra clozapine HR 0.74). Trial-evidence-only view retained as the Sensitivity scenario row. Inputs: Src-Inpatient Costs mortality block (C42:C46). User switch: Setup → Advanced settings.",
+   "row": 119
+  },
+  {
+   "paramId": "P_FULLCOST",
+   "label": "Medication costing basis",
+   "live": "Consumed doses only",
+   "default": "Consumed doses only",
+   "override": "Consumed doses only",
+   "unit": "text",
+   "source": "Owner decision 2026-09-10. 'Full course (incl. wastage)' = the CEA costs 100% of prescribed units — what procurement actually pays — and Calc-Direct col AH shows the unconsumed share as wastage. 'Consumed doses only' = the standard CEA convention (medication cost scaled by adherence). Single switch point: Calc-Direct col F. Effects are ALWAYS adherence-scaled in both states, so the E=P tier identity (QC A10) is unchanged. The BIA is NOT governed by this parameter — it keeps the demand-model wastage method (P_BIA_ADHERENCE row 104 + P_BIA_WASTAGE row 102). User input: Setup Advanced settings.",
+   "row": 122
+  },
+  {
+   "paramId": "P_HOSP_EFFECT",
+   "label": "Apply treatment effect on admissions?",
+   "live": "Yes",
+   "default": "Yes",
+   "override": "Yes",
+   "unit": "Yes/No",
+   "source": "Owner decision 2026-09-11. Treated patients are admitted less often than untreated — class RR 0.43 (0.32–0.57), Ceraso 2020 Cochrane CD008016; product overrides for clozapine / olanzapine / quetiapine on Src-Inpatient Costs rows 49–53. Adherence scales the benefit (Calc-Direct col AJ: 1 − adherence × (1 − RR)). When ON, P_ADM_DIFF (row 48) is forced idle — the LAI admission credit is carried by adherence inside AJ. User input: Setup → Advanced settings.",
+   "row": 125
+  },
+  {
+   "paramId": "P_ADM_ANCHOR",
+   "label": "Admission-rate basis",
+   "live": "Adjusted for treatment (recommended)",
+   "default": "Adjusted for treatment (recommended)",
+   "override": "Adjusted for treatment (recommended)",
+   "unit": "text",
+   "source": "Owner decision 2026-09-11. Comparator-rebased (default): the country's admission % (P_INPT_SCZ_ACUTE) describes patients on the current Initiation+Maintenance treatment; untreated rate = admission % ÷ RR-effective of that comparator (Calc-Direct col AK). Untreated baseline (alternative, conservative): treats the country's admission % as the untreated rate. User input: Setup → Advanced settings.",
+   "row": 126
+  },
+  {
+   "paramId": "P_TF_METHOD",
+   "label": "Transfer-factor method",
+   "live": "Proportional (share of disability)",
+   "default": "Proportional (share of disability)",
+   "override": "Proportional (share of disability)",
+   "unit": "text",
+   "source": "Owner decision 2026-09-11. Proportional (default): Q = k_prop × baseline DW (Src-Transition Factors row 18; 0.284 = 0.181/0.638, Andrews 2003 / Chisholm 2008 WHO-CHOICE equivalent 0.289). Absolute (Andrews literal): Q = the applied 0.181 (Src-Transition Factors col E) — reproduces the pre-change chain. User input: Setup → Advanced settings.",
+   "row": 129
+  },
+  {
+   "paramId": "P_TF_FLOOR",
+   "label": "Cap health gain at the GBD acute–stable gap",
+   "live": "Yes",
+   "default": "Yes",
+   "override": "Yes",
+   "unit": "Yes/No",
+   "source": "Owner decision 2026-09-11. Caps monotherapy improvement at the GBD acute→residual gap (baseline DW − DW_residual 0.588; ET severe 0.190) — a treated patient is never modelled as better than GBD's stable residual state. Binds only for clozapine at defaults (0.197 → 0.190). Salomon 2015 Lancet Glob Health. User input: Setup → Advanced settings. vS 2026-09-14: Setup row hidden (wiring intact via Setup!D29); plain-language: never credits more improvement than the gap between acute and stable schizophrenia (0.19 DW units); affects clozapine only (−3%).",
+   "row": 130
+  }
+ ],
+ "cabinetConfig": [
+  {
+   "condition": "Schizophrenia",
+   "slots": [
+    "Initiation + Maintenance",
+    "Maintenance",
+    "Treatment-resistant",
+    "Acute agitation",
+    null
+   ],
+   "description": "The most cost-effective medications to manage psychosis across the full treatment pathway, including treatment initation, maintenance, treatment-resistance, and acute agitation."
+  },
+  {
+   "condition": "Depression",
+   "slots": [
+    "Maintenance (1st line)",
+    "Maintenance (2nd line)",
+    "Maintenance (1st line adjunct)",
+    "Maintenance (1st line combined)",
+    null
+   ],
+   "description": "Recommended drugs to manage depression — first-line SSRIs, second-line TCAs, CBT adjunct therapy, and combined pharmacotherapy + psychotherapy for moderate-severe or treatment-resistant cases."
+  },
+  {
+   "condition": "Bipolar Disorder",
+   "slots": [
+    "Maintenance (1st line)",
+    "Maintenance (2nd line)",
+    null,
+    null,
+    null
+   ],
+   "description": "Recommended drugs for bipolar disorder maintenance — first-line mood stabilisers (lithium, valproate) and second-line alternatives (carbamazepine)."
+  },
+  {
+   "condition": "Anxiety",
+   "slots": [
+    "Maintenance (1st line)",
+    "Maintenance (1st line adjunct)",
+    null,
+    null,
+    null
+   ],
+   "description": "Recommended drugs to manage anxiety disorders — first-line SSRIs and CBT adjunct therapy for moderate-severe generalised anxiety."
+  }
+ ],
+ "currencies": [
+  {
+   "country": "Ethiopia",
+   "symbol": "Br",
+   "iso": "ETB",
+   "name": "Ethiopian Birr"
+  },
+  {
+   "country": "Ghana",
+   "symbol": "GH₵",
+   "iso": "GHS",
+   "name": "Ghanaian Cedi"
+  },
+  {
+   "country": "Nigeria",
+   "symbol": "₦",
+   "iso": "NGN",
+   "name": "Nigerian Naira"
+  },
+  {
+   "country": "Rwanda",
+   "symbol": "FRw",
+   "iso": "RWF",
+   "name": "Rwandan Franc"
+  },
+  {
+   "country": "South Africa",
+   "symbol": "R",
+   "iso": "ZAR",
+   "name": "South African Rand"
+  }
+ ],
+ "varLabels": {
+  "B33": "Current treatment",
+  "B34": "Dominated",
+  "B35": "Less costly, less effective",
+  "B36": "SW quadrant",
+  "B37": "Dominant (cost-saving)",
+  "B38": "Incremental",
+  "B39": "vs no treatment",
+  "B40": "(dominated)",
+  "B41": "(less costly, less effective)",
+  "B42": "Reference",
+  "B43": "(n/a)",
+  "B44": "(dominant, cost-saving)",
+  "D22": "Very CE",
+  "D23": "CE",
+  "D24": "Not CE",
+  "D25": "Current tx",
+  "D29": "NO THRESHOLD — country pending",
+  "D30": "NO DOMESTIC THRESHOLD — country pending",
+  "E27": 0.3333333333333333,
+  "F33": "PASS",
+  "F34": "FAIL",
+  "F35": "OK",
+  "F36": "MISMATCH",
+  "F38": "TF MISSING",
+  "H33": "Not appraised",
+  "H34": "NOT recommended",
+  "H35": "n/a — outside consensus scope",
+  "H36": "(not panel-recommended)",
+  "J33": "User override",
+  "J34": "Current tx (incumbent)",
+  "J35": "CE-optimised",
+  "J36": "Oral",
+  "J37": "LAI",
+  "J38": "SAI",
+  "J39": "IM",
+  "J40": "Total",
+  "M21": "Current tx (incumbent)",
+  "M22": "CE-optimised",
+  "M25": "Full course (incl. wastage)",
+  "M26": "Consumed doses only",
+  "M29": "Adjusted for treatment (recommended)",
+  "M30": "As reported",
+  "M33": "Proportional (share of disability)",
+  "M34": "Absolute (fixed 0.181)",
+  "B16": "Yes",
+  "B17": "No",
+  "D9": "Schizophrenia",
+  "J7": "Pichon-Riviere (supply-side)",
+  "J8": "Ochalek (supply-side)",
+  "J9": "1x GDP per capita",
+  "J10": "National (SA domestic)",
+  "J11": "Custom",
+  "H22": "USD",
+  "H23": "LCU",
+  "F22": "No treatment",
+  "F23": "Current treatment"
+ },
+ "setupStateAtSave": {
+  "country": "Ethiopia",
+  "comparator": "Current treatment",
+  "overrides": {
+   "Initiation + Maintenance": null,
+   "Maintenance": null,
+   "Treatment-resistant": null,
+   "Acute agitation": null
+  },
+  "thresholdMethod": "Ochalek (supply-side)",
+  "customThreshold": null,
+  "includeAdmin": "Yes",
+  "adminPct": 0.12,
+  "currency": "USD",
+  "costing": "Consumed doses only",
+  "hospChannel": "Yes",
+  "anchor": "Adjusted for treatment (recommended)",
+  "tfMethod": "Proportional (share of disability)",
+  "floor": "Yes",
+  "thresholdInEffectText": "Yes"
+ },
+ "modelVersion": "vS",
+ "versionStamp": "vS  ·  September 2026  ·  Clinton Health Access Initiative"
+}
