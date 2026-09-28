@@ -73,7 +73,7 @@ export function Dashboard() {
       {ucFilter !== ALL && <Hint>{shown.length} product{shown.length === 1 ? "" : "s"} for <UcChip uc={ucFilter} />, each compared with <b>{shortName(comparators.find(([uc]) => uc === ucFilter)?.[1] ?? "—")}</b>.</Hint>}
       <div className="scroll">
         <table>
-          <thead><tr><th>#</th><th>Drug</th><th className="num">Incremental {sym}/DALY vs comparator</th><th colSpan={2} style={{ textAlign: "center" }}>Incremental CE</th><th>CE basis</th><th className="num">Absolute {sym}/DALY (vs no care)</th><th className="num">Total ({sym})</th><th className="num">Net DALYs</th><th>Nat. EML</th><th>Use</th></tr></thead>
+          <thead><tr><th>#</th><th>Drug</th><th className="num">Incremental {sym}/DALY vs comparator</th><th colSpan={2} style={{ textAlign: "center" }}>Incremental CE</th><th>CE basis</th><th className="num">Absolute {sym}/DALY (vs no care)</th><th className="num">Medicine ({sym}/yr)</th><th className="num">Total ({sym}/yr)</th><th className="num">Net DALYs</th><th>Nat. EML</th><th>Use</th></tr></thead>
           <tbody>
             {shown.map((p, i) => {
               const st = statusChip(p.ceStatus);
@@ -85,7 +85,7 @@ export function Dashboard() {
                   <IncrCells headline={p.headline} lambda={lambda} />
                   <td><Chip cls={st.cls}>{st.label}</Chip></td>
                   <td className="num">{p.absolutePerDaly != null ? money(p.absolutePerDaly, sym, 0) : "—"}</td>
-                  <td className="num">{money(p.total, sym, 2)}</td><td className="num">{dalys(p.netDalys)}</td>
+                  <td className="num" title="Medicine cost per patient-year on the selected costing basis (consumed doses by default)">{money(p.medCosted, sym, 2)}</td><td className="num">{money(p.total, sym, 2)}</td><td className="num">{dalys(p.netDalys)}</td>
                   <td style={{ textAlign: "center", color: "#15803D", fontWeight: "bold" }}>{emlMark(p.nationalEml)}</td>
                   <td className="chipcell"><span title={p.use ?? ""}><UcChip uc={p.use} short /></span></td>
                 </tr>
