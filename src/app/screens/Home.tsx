@@ -2,7 +2,7 @@ import { useStore } from "../store";
 import { Eyebrow, PublicBanner } from "../components";
 import { ABOUT, HOME_SUB, HOME_TITLE, TARGET_POP } from "../content";
 import { TOOL_TAG, TOOL_VERSION } from "../version";
-import { IS_PUBLIC, PUBLIC_LABEL } from "../publicBuild";
+import { IS_PUBLIC, PUBLIC_LABEL, HIDE_VERSION_CHIP } from "../publicBuild";
 
 export function Home() {
   const { go, edits, clearEdits, scenario } = useStore();
@@ -12,7 +12,7 @@ export function Home() {
       <div style={{ textAlign: "center", padding: "6px 0 2px" }}>
         <div style={{ fontSize: 24, fontWeight: "bold", color: "var(--deep)" }}>{HOME_TITLE}</div>
         <div style={{ fontSize: 14.5, color: "var(--mut)", margin: "4px 0 8px" }}>{HOME_SUB}</div>
-        <span className="vchip">{TOOL_VERSION} · {TOOL_TAG}</span>&nbsp; {IS_PUBLIC && <><span className="chip c-tea">{PUBLIC_LABEL}</span>&nbsp; </>}<span className="chip c-sla">Clinton Health Access Initiative</span>
+        {!HIDE_VERSION_CHIP && <><span className="vchip">{TOOL_VERSION} · {TOOL_TAG}</span>&nbsp; </>}{IS_PUBLIC && <><span className="chip c-tea">{PUBLIC_LABEL}</span>&nbsp; </>}<span className="chip c-sla">Clinton Health Access Initiative</span>
       </div>
       <PublicBanner style={{ marginTop: 14 }} />
       {nEdits > 0 && (

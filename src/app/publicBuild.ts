@@ -6,7 +6,7 @@
 import metaJson from "@data/meta.json";
 
 export interface PublicBuildInfo {
-  disclosure: "label-only" | "full"; label: string; built: string;
+  disclosure: "label-only" | "full"; label: string; built: string; versionChip?: "show" | "hide";
   // full disclosure only
   preset?: string | null; banner?: string; withheldNote?: string; withheldCount?: number; withheldSourceCount?: number; withheld?: Record<string, string>;
 }
@@ -16,6 +16,8 @@ export const IS_PUBLIC = PUBLIC_BUILD != null;
 /** Withheld items are shown to the user (chips, rows, banner) only under full disclosure. */
 export const DISCLOSE_WITHHELD = PUBLIC_BUILD?.disclosure === "full";
 export const PUBLIC_LABEL = PUBLIC_BUILD?.label ?? "Public version";
+/** Report-attachment build (29 Sep 2026): the Home page shows only the label chip, not the "vS · September 2026" version chip. */
+export const HIDE_VERSION_CHIP = PUBLIC_BUILD?.versionChip === "hide";
 export const WITHHELD_NOTE = PUBLIC_BUILD?.withheldNote ?? "Withheld pending country data clearance; enter your own value on Sources";
 
 /** Note for a withheld dataset path, or null (always null unless disclosure is full). */

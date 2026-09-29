@@ -4,7 +4,7 @@ A browser-based tool that ranks antipsychotic medicines for psychosis care by va
 
 **Status: public version, validation release September 2026.** The model and its inputs were reviewed with country teams in September 2026 workshops. Results depend strongly on medicine prices, so enter local prices where you have them.
 
-**Open the tool:** https://PLACEHOLDER.example.org (also served at https://chai-luke.github.io/mh-cea-tool/). An offline copy that runs from a single file is at https://PLACEHOLDER.example.org/mh-cea-tool-offline.html: save it and open it in any modern browser, no installation or internet connection needed.
+**Open the tool:** https://medcetool.com (also served at https://chai-luke.github.io/mh-cea-tool/). An offline copy that runs from a single file is at https://medcetool.com/mh-cea-tool-offline.html: save it and open it in any modern browser, no installation or internet connection needed.
 
 ## Who built it
 
@@ -62,4 +62,4 @@ Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub shows a "Cite thi
 
 ## Custom domain
 
-The site is published by the GitHub Actions workflow in `.github/workflows/pages.yml` on every push to `main`. The custom domain is set in the repository's Pages settings. `public/CNAME` holds the same domain for reference; replace `PLACEHOLDER.example.org` there and in this README once the domain is registered.
+The site is published by the GitHub Actions workflow in `.github/workflows/pages.yml` on every push to `main`. The custom domain is set in the repository's Pages settings. `public/CNAME` holds the same domain for reference.
