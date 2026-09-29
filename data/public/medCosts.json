@@ -1500,7 +1500,7 @@
       "tier": "T4",
       "priceUsd": 70.40796871246296,
       "unit": "per 405 mg LAI injection",
-      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "ref": "Same chain as the 300 mg row (UK NHS list price 2019 x the country adjustment ratio), scaled to the 405 mg vial by the UK list-price ratio 285.52/222.64 = 1.282 (AWMSG appraisal 2991 of ZypAdhera, Table 5, BNF Feb 2016)",
       "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
       "priority": 1,
       "default": true
@@ -1511,8 +1511,8 @@
       "tier": "T4",
       "priceUsd": 54.9020389259693,
       "unit": "per 300mg LAI injection",
-      "ref": "Country-adjusted global benchmark price",
-      "note": "Price carried in the model before 17 Sep 2026.",
+      "ref": "UK NHS list price 2019, $302.995 (GBP 222.64) per 300 mg vial, x the country adjustment ratio from the CHAI country price workbook (Sep 2026): the mean ratio of local procurement prices to global reference prices across products that have both (Ethiopia 0.181, Nigeria 0.197, Rwanda 0.120, South Africa 0.155)",
+      "note": "300 mg vial (two-weekly dose). Alternate since 29 Sep 2026: the model costs the monthly 405 mg vial.",
       "priority": 5,
       "default": false
      }
@@ -1524,7 +1524,7 @@
       "tier": "T4",
       "priceUsd": 76.53739973773847,
       "unit": "per 405 mg LAI injection",
-      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "ref": "Same chain as the 300 mg row (UK NHS list price 2019 x the country adjustment ratio), scaled to the 405 mg vial by the UK list-price ratio 285.52/222.64 = 1.282 (AWMSG appraisal 2991 of ZypAdhera, Table 5, BNF Feb 2016)",
       "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
       "priority": 1,
       "default": true
@@ -1535,8 +1535,8 @@
       "tier": "T4",
       "priceUsd": 59.6815868506938,
       "unit": "per 300mg LAI injection",
-      "ref": "Country-adjusted global benchmark price",
-      "note": "Price carried in the model before 17 Sep 2026.",
+      "ref": "UK NHS list price 2019, $302.995 (GBP 222.64) per 300 mg vial, x the country adjustment ratio from the CHAI country price workbook (Sep 2026): the mean ratio of local procurement prices to global reference prices across products that have both (Ethiopia 0.181, Nigeria 0.197, Rwanda 0.120, South Africa 0.155)",
+      "note": "300 mg vial (two-weekly dose). Alternate since 29 Sep 2026: the model costs the monthly 405 mg vial.",
       "priority": 5,
       "default": false
      }
@@ -1548,7 +1548,7 @@
       "tier": "T4",
       "priceUsd": 46.75103023459796,
       "unit": "per 405 mg LAI injection",
-      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "ref": "Same chain as the 300 mg row (UK NHS list price 2019 x the country adjustment ratio), scaled to the 405 mg vial by the UK list-price ratio 285.52/222.64 = 1.282 (AWMSG appraisal 2991 of ZypAdhera, Table 5, BNF Feb 2016)",
       "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
       "priority": 1,
       "default": true
@@ -1559,8 +1559,8 @@
       "tier": "T4",
       "priceUsd": 36.4550622423329,
       "unit": "per 300mg LAI injection",
-      "ref": "Country-adjusted global benchmark price",
-      "note": "Price carried in the model before 17 Sep 2026.",
+      "ref": "UK NHS list price 2019, $302.995 (GBP 222.64) per 300 mg vial, x the country adjustment ratio from the CHAI country price workbook (Sep 2026): the mean ratio of local procurement prices to global reference prices across products that have both (Ethiopia 0.181, Nigeria 0.197, Rwanda 0.120, South Africa 0.155)",
+      "note": "300 mg vial (two-weekly dose). Alternate since 29 Sep 2026: the model costs the monthly 405 mg vial.",
       "priority": 5,
       "default": false
      }
@@ -1572,7 +1572,7 @@
       "tier": "T4",
       "priceUsd": 60.137760717379756,
       "unit": "per 405 mg LAI injection",
-      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "ref": "Same chain as the 300 mg row (UK NHS list price 2019 x the country adjustment ratio), scaled to the 405 mg vial by the UK list-price ratio 285.52/222.64 = 1.282 (AWMSG appraisal 2991 of ZypAdhera, Table 5, BNF Feb 2016)",
       "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
       "priority": 1,
       "default": true
@@ -1583,8 +1583,8 @@
       "tier": "T4",
       "priceUsd": 46.8936363341182,
       "unit": "per 300mg LAI injection",
-      "ref": "Country-adjusted global benchmark price",
-      "note": "Price carried in the model before 17 Sep 2026.",
+      "ref": "UK NHS list price 2019, $302.995 (GBP 222.64) per 300 mg vial, x the country adjustment ratio from the CHAI country price workbook (Sep 2026): the mean ratio of local procurement prices to global reference prices across products that have both (Ethiopia 0.181, Nigeria 0.197, Rwanda 0.120, South Africa 0.155)",
+      "note": "300 mg vial (two-weekly dose). Alternate since 29 Sep 2026: the model costs the monthly 405 mg vial.",
       "priority": 5,
       "default": false
      }
