@@ -3,7 +3,8 @@
   "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
   "workbook_saved": "2026-09-29T11:00:36",
   "extracted": "2026-09-29T11:12:15",
-  "sheet": "Src-Med Costs"
+  "sheet": "Src-Med Costs",
+  "olzLai405mg": "29 Sep 2026: olanzapine LAI priced per 405 mg monthly vial (x1.282 on the 300 mg benchmark; tools/apply_olz_lai_405mg_2026-09-29.py)"
  },
  "selectedBasis": "Cheapest",
  "frequencyPerYear": {
@@ -1494,6 +1495,17 @@
    "priceSources": {
     "Ethiopia": [
      {
+      "id": "olz-lai-405mg",
+      "label": "Country-adjusted global benchmark, 405 mg vial",
+      "tier": "T4",
+      "priceUsd": 70.40796871246296,
+      "unit": "per 405 mg LAI injection",
+      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
+      "priority": 1,
+      "default": true
+     },
+     {
       "id": "base",
       "label": "Country-adjusted global benchmark price",
       "tier": "T4",
@@ -1502,10 +1514,21 @@
       "ref": "Country-adjusted global benchmark price",
       "note": "Price carried in the model before 17 Sep 2026.",
       "priority": 5,
-      "default": true
+      "default": false
      }
     ],
     "Nigeria": [
+     {
+      "id": "olz-lai-405mg",
+      "label": "Country-adjusted global benchmark, 405 mg vial",
+      "tier": "T4",
+      "priceUsd": 76.53739973773847,
+      "unit": "per 405 mg LAI injection",
+      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
+      "priority": 1,
+      "default": true
+     },
      {
       "id": "base",
       "label": "Country-adjusted global benchmark price",
@@ -1515,10 +1538,21 @@
       "ref": "Country-adjusted global benchmark price",
       "note": "Price carried in the model before 17 Sep 2026.",
       "priority": 5,
-      "default": true
+      "default": false
      }
     ],
     "Rwanda": [
+     {
+      "id": "olz-lai-405mg",
+      "label": "Country-adjusted global benchmark, 405 mg vial",
+      "tier": "T4",
+      "priceUsd": 46.75103023459796,
+      "unit": "per 405 mg LAI injection",
+      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
+      "priority": 1,
+      "default": true
+     },
      {
       "id": "base",
       "label": "Country-adjusted global benchmark price",
@@ -1528,10 +1562,21 @@
       "ref": "Country-adjusted global benchmark price",
       "note": "Price carried in the model before 17 Sep 2026.",
       "priority": 5,
-      "default": true
+      "default": false
      }
     ],
     "South Africa": [
+     {
+      "id": "olz-lai-405mg",
+      "label": "Country-adjusted global benchmark, 405 mg vial",
+      "tier": "T4",
+      "priceUsd": 60.137760717379756,
+      "unit": "per 405 mg LAI injection",
+      "ref": "AWMSG appraisal 2991 (ZypAdhera), Table 5: BNF Feb 2016 list prices GBP 222.64 per 300 mg vial and GBP 285.52 per 405 mg vial (ratio 1.282), applied to the country-adjusted 300 mg benchmark",
+      "note": "Monthly 405 mg depot (12 injections a year). Price = the 300 mg country-adjusted global benchmark x 1.282, the UK list-price ratio between the 405 mg and 300 mg vials. Set 29 Sep 2026 for the final-report release; verify a local price.",
+      "priority": 1,
+      "default": true
+     },
      {
       "id": "base",
       "label": "Country-adjusted global benchmark price",
@@ -1541,7 +1586,7 @@
       "ref": "Country-adjusted global benchmark price",
       "note": "Price carried in the model before 17 Sep 2026.",
       "priority": 5,
-      "default": true
+      "default": false
      }
     ]
    },
@@ -1556,8 +1601,8 @@
    "formulation": "LAI injection",
    "dosingGuideline": "300mg/2wk or 405mg/4wk depot (Zyprexa Relprevv)",
    "injectable": "Yes",
-   "strengthMg": 300,
-   "doseMg": 300,
+   "strengthMg": 405,
+   "doseMg": 405,
    "frequency": "Monthly",
    "unitsPerAdminCached": 1,
    "adminsPerYrCached": 12,
@@ -1566,7 +1611,7 @@
    "prices": {
     "Ethiopia": {
      "cheapest": null,
-     "average": 54.9020389259693,
+     "average": 70.40796871246296,
      "negotiated": null,
      "bestCrossCountry": null
     },
@@ -1578,19 +1623,19 @@
     },
     "Nigeria": {
      "cheapest": null,
-     "average": 59.6815868506938,
+     "average": 76.53739973773847,
      "negotiated": null,
      "bestCrossCountry": null
     },
     "Rwanda": {
      "cheapest": null,
-     "average": 36.4550622423329,
+     "average": 46.75103023459796,
      "negotiated": null,
      "bestCrossCountry": null
     },
     "South Africa": {
      "cheapest": null,
-     "average": 46.8936363341182,
+     "average": 60.137760717379756,
      "negotiated": null,
      "bestCrossCountry": null
     }
@@ -1603,19 +1648,19 @@
    "tiers": {
     "Ethiopia": {
      "tier": "T4",
-     "source": "Country-adjusted global benchmark price"
+     "source": "Country-adjusted global benchmark, 405 mg vial"
     },
     "Nigeria": {
      "tier": "T4",
-     "source": "Country-adjusted global benchmark price"
+     "source": "Country-adjusted global benchmark, 405 mg vial"
     },
     "Rwanda": {
      "tier": "T4",
-     "source": "Country-adjusted global benchmark price"
+     "source": "Country-adjusted global benchmark, 405 mg vial"
     },
     "South Africa": {
      "tier": "T4",
-     "source": "Country-adjusted global benchmark price"
+     "source": "Country-adjusted global benchmark, 405 mg vial"
     }
    }
   },

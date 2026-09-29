@@ -11,7 +11,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "build:single": "vite build --mode single"
+    "build:single": "vite build --mode single",
+    "data:attachment": "python tools/build_public.py --rules data/public/redactions.report-attachment.json --out data/report-attachment",
+    "build:attachment-single": "npm run data:attachment && vite build --mode report-attachment-single"
   },
   "dependencies": {
     "react": "^18.3.1",

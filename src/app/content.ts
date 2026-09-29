@@ -61,7 +61,7 @@ export const SETUP = {
     ["oral", "Oral tablets", "All oral products. Ascher-Svanum 2008."],
     ["lai", "Long-acting injections", "All depot injections. Einarson 2012."],
     ["im", "Short-acting injections", "Acute-agitation products: given by staff, so every dose is taken."],
-    ["cobenfy", "Cobenfy (KarXT)", "Set equal to oral adherence (owner decision 14 Sep 2026). The earlier 55% rested on trial discontinuation (ICER 2024; EMERGENT-4/5) and is kept as the low sensitivity bound."],
+    ["cobenfy", "Cobenfy (KarXT)", "Set equal to oral adherence (CHAI methods decision, 14 Sep 2026). The earlier 55% rested on trial discontinuation (ICER 2024; EMERGENT-4/5) and is kept as the low sensitivity bound."],
   ] as [("oral" | "lai" | "im" | "cobenfy"), string, string][],
   rw: "Scales every product's health gain; 1.0 = trial effect sizes as published.",
 };

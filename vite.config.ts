@@ -17,9 +17,15 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 export default defineConfig(({ mode }) => {
   const env = { ...loadEnv(mode, process.cwd(), "VITE_"), ...process.env };
   const hasPrivate = existsSync(fileURLToPath(new URL("./data/v32/meta.json", import.meta.url)));
-  const layer = env.VITE_DATA_LAYER === "public" || mode.startsWith("public") || !hasPrivate ? "public" : "v32";
-  const single = mode === "single" || mode === "public-single";
-  const outDir = (layer === "public" && hasPrivate ? "dist-public" : "dist") + (single ? "-single" : "");
+  // Layer = VITE_DATA_LAYER, else the mode's prefix when data/<prefix> exists (e.g. "report-attachment-single" -> data/report-attachment),
+  // else v32. A checkout without data/v32 (the public repo) always builds public.
+  const modeLayer = mode.replace(/-?single$/, "");
+  const layerExists = (l: string) => existsSync(fileURLToPath(new URL(`./data/${l}/meta.json`, import.meta.url)));
+  const layer = !hasPrivate ? "public"
+    : env.VITE_DATA_LAYER && layerExists(env.VITE_DATA_LAYER) ? env.VITE_DATA_LAYER
+    : modeLayer && modeLayer !== "production" && modeLayer !== "development" && layerExists(modeLayer) ? modeLayer : "v32";
+  const single = mode.endsWith("single");
+  const outDir = (layer !== "v32" && hasPrivate ? `dist-${layer}` : "dist") + (single ? "-single" : "");
   return {
     plugins: single ? [react(), viteSingleFile({ removeViteModuleLoader: true })] : [react()],
     base: env.VITE_BASE || "./",
