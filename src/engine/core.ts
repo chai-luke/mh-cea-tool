@@ -333,14 +333,16 @@ export function analyze(s: Scenario, ds: Dataset): AnalysisResult {
     return { ...p, comparator, compNetDalys, compTotal, deltaDalys, deltaCost, icerVsComparator, ceBasis, headline, ceStatus, nmb, rank: null };
   });
 
-  // ---- ranking (Detailed Results V/X): dominated last; NMB desc; tiebreak lower cost then earlier row
+  // ---- ranking (Detailed Results V/X; workbook display rule, vS session 4 Part 4D, 14 Sep 2026): grouped by CE status
+  // (cost-effective → current treatment → less costly, less effective → not cost-effective → dominated), then NMB desc within
+  // the group; tiebreak lower cost then earlier row. Verified against the vS.1 QC-Battery (28 Sep 2026) in all 8 blocks.
   const rowOf = (p: ProductResult) => 10 + ds.interventions.findIndex((iv) => iv.intId === p.intId);
+  const grpOf = (p: ProductResult) => p.ceStatus === "Dominant (cost-saving)" || p.ceStatus === "Very CE" || p.ceStatus === "CE" ? 0
+    : p.ceStatus === "Current tx" ? 1 : p.ceStatus === "SW quadrant" ? 2 : p.ceStatus === "Not CE" ? 3 : p.ceStatus === "Dominated" ? 4 : 5;
   const keyOf = (p: ProductResult) => (p.nmb ?? 0) - p.total / 1e6 + rowOf(p) / 1e8;
+  const before = (q: ProductResult, p: ProductResult) => grpOf(q) < grpOf(p) || (grpOf(q) === grpOf(p) && keyOf(q) > keyOf(p));
   const inc = products.filter((p) => p.included && p.nmb != null);
-  const nonDom = inc.filter((p) => p.ceBasis !== "Dominated");
-  const dom = inc.filter((p) => p.ceBasis === "Dominated");
-  for (const p of nonDom) p.rank = nonDom.filter((q) => keyOf(q) > keyOf(p)).length + 1;
-  for (const p of dom) p.rank = nonDom.length + dom.filter((q) => keyOf(q) > keyOf(p)).length + 1;
+  for (const p of inc) p.rank = inc.filter((q) => before(q, p)).length + 1;
   const ranked = [...inc].sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9));
 
   // ---- cabinet (CE Dashboard rows 9-12)

@@ -1,42 +1,12 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
   "sheet": "Products",
   "note": "default/source/tier are cached for the saved country; the engine recomputes them"
  },
  "products": [
-  {
-   "intId": "SCZ-01",
-   "include": "Yes",
-   "name": "Haloperidol (oral)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 5mg oral tablet",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-22",
-   "include": "Yes",
-   "name": "Haloperidol (IM, short-acting)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 5mg IM injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-24",
-   "include": "Yes",
-   "name": "Haloperidol decanoate (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 50mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
   {
    "intId": "SCZ-02",
    "include": "Yes",
@@ -44,6 +14,16 @@
    "defaultUnitCostCached": null,
    "userUnitPrice": null,
    "costUnit": "per 100mg oral tablet",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-01",
+   "include": "Yes",
+   "name": "Haloperidol (oral)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 5mg oral tablet",
    "sourceCached": null,
    "tierCached": null
   },
@@ -58,112 +38,12 @@
    "tierCached": null
   },
   {
-   "intId": "SCZ-21",
+   "intId": "SCZ-19",
    "include": "Yes",
-   "name": "Fluphenazine decanoate (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 25mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-07",
-   "include": "Yes",
-   "name": "Flupenthixol decanoate (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 20mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-20",
-   "include": "Yes",
-   "name": "Zuclopenthixol decanoate (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 200mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-03",
-   "include": "Yes",
-   "name": "Risperidone (oral)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 2mg oral tablet",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-08",
-   "include": "Yes",
-   "name": "Risperidone (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 37.5mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-09",
-   "include": "Yes",
-   "name": "Paliperidone palmitate (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 150mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-04",
-   "include": "Yes",
-   "name": "Olanzapine (oral)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 10mg oral tablet",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-11",
-   "include": "Yes",
-   "name": "Olanzapine (IM, short-acting)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 10mg IM injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-12",
-   "include": "Yes",
-   "name": "Olanzapine (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 300mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-05",
-   "include": "Yes",
-   "name": "Quetiapine (oral)",
+   "name": "Amisulpride (oral)",
    "defaultUnitCostCached": null,
    "userUnitPrice": null,
    "costUnit": "per 200mg oral tablet",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-06",
-   "include": "Yes",
-   "name": "Clozapine (oral)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 100mg oral tablet",
    "sourceCached": null,
    "tierCached": null
   },
@@ -178,52 +58,12 @@
    "tierCached": null
   },
   {
-   "intId": "SCZ-14",
-   "include": "Yes",
-   "name": "Aripiprazole (IM)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 9.75mg IM injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-15",
-   "include": "Yes",
-   "name": "Aripiprazole (LAI)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 400mg LAI injection",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-19",
-   "include": "Yes",
-   "name": "Amisulpride (oral)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 200mg oral tablet",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
    "intId": "SCZ-16",
    "include": "Yes",
    "name": "Cariprazine (oral)",
    "defaultUnitCostCached": null,
    "userUnitPrice": null,
    "costUnit": "per 3mg oral tablet",
-   "sourceCached": null,
-   "tierCached": null
-  },
-  {
-   "intId": "SCZ-17",
-   "include": "Yes",
-   "name": "Lurasidone (oral)",
-   "defaultUnitCostCached": null,
-   "userUnitPrice": null,
-   "costUnit": "per 80mg oral tablet",
    "sourceCached": null,
    "tierCached": null
   },
@@ -238,12 +78,172 @@
    "tierCached": null
   },
   {
+   "intId": "SCZ-17",
+   "include": "Yes",
+   "name": "Lurasidone (oral)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 80mg oral tablet",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-04",
+   "include": "Yes",
+   "name": "Olanzapine (oral)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 10mg oral tablet",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-05",
+   "include": "Yes",
+   "name": "Quetiapine (oral)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 200mg oral tablet",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-03",
+   "include": "Yes",
+   "name": "Risperidone (oral) (current treatment)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 2mg oral tablet",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
    "intId": "SCZ-10",
    "include": "Yes",
    "name": "Cobenfy (KarXT)",
    "defaultUnitCostCached": null,
    "userUnitPrice": null,
    "costUnit": "per 1mg oral capsule",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-07",
+   "include": "Yes",
+   "name": "Flupenthixol decanoate (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 20mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-21",
+   "include": "Yes",
+   "name": "Fluphenazine decanoate (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 25mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-24",
+   "include": "Yes",
+   "name": "Haloperidol decanoate (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 50mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-20",
+   "include": "Yes",
+   "name": "Zuclopenthixol decanoate (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 200mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-15",
+   "include": "Yes",
+   "name": "Aripiprazole (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 400mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-12",
+   "include": "Yes",
+   "name": "Olanzapine (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 300mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-09",
+   "include": "Yes",
+   "name": "Paliperidone palmitate (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 150mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-08",
+   "include": "Yes",
+   "name": "Risperidone (LAI)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 37.5mg LAI injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-06",
+   "include": "Yes",
+   "name": "Clozapine (oral) (current treatment)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 100mg oral tablet",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-14",
+   "include": "Yes",
+   "name": "Aripiprazole (IM)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 9.75mg IM injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-22",
+   "include": "Yes",
+   "name": "Haloperidol (IM, short-acting) (current treatment)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 5mg IM injection",
+   "sourceCached": null,
+   "tierCached": null
+  },
+  {
+   "intId": "SCZ-11",
+   "include": "Yes",
+   "name": "Olanzapine (IM, short-acting)",
+   "defaultUnitCostCached": null,
+   "userUnitPrice": null,
+   "costUnit": "per 10mg IM injection",
    "sourceCached": null,
    "tierCached": null
   }

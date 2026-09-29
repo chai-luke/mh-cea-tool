@@ -1,10 +1,9 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
-  "sheet": "Src-SE Profiles + Calc-SE",
-  "useCategoryAlignment": "17 Sep 2026: acute IMs (SCZ-11/14/22) costBucket -> episodic (0)"
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
+  "sheet": "Src-SE Profiles + Calc-SE"
  },
  "buckets": [
   {
@@ -83,9 +82,9 @@
    "low": 0,
    "high": 0.002,
    "mgmtCostUsd": 0,
-   "mgmtCostLcuCached": null,
-   "members": "haloperidol IM, olanzapine IM, aripiprazole IM — STATED ASSUMPTION: episodic exposure, decrement per treated patient-year. Cost stays on the molecule class row (re-map, do not re-estimate).",
-   "sourceNote": "Management cost 0 by construction (17 Sep 2026): acute-agitation products are costed per episode, not per treated year; the maintenance metabolic-monitoring buckets do not apply."
+   "mgmtCostLcuCached": 0,
+   "members": "haloperidol IM, olanzapine IM, aripiprazole IM — STATED ASSUMPTION: episodic exposure, decrement per treated patient-year. Cost stays on the molecule class row (re-map, do not re-estimate). Cost 0 by construction (17 Sep 2026): acute-agitation products are costed per episode, not per treated year; the maintenance metabolic-monitoring buckets do not apply.",
+   "sourceNote": null
   },
   {
    "bucket": "Chlorpromazine (cost row — decrement uses the FGA bucket)",

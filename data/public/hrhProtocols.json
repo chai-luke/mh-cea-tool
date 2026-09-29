@@ -1,11 +1,10 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
   "sheet": "Src-HRH Protocols",
-  "note": "country blocks located from row-6 headers; % Patients Receiving carried but NOT applied by the workbook engine",
-  "rwLaiNurseMinutes": "18 Sep 2026: Rwanda LAI monitoring (injection) rows, Psychiatric Nurse 52.5 -> 30 min (tools/apply_rw_lai_nurse_minutes_2026-09-18.py)"
+  "note": "country blocks located from row-6 headers; % Patients Receiving carried but NOT applied by the workbook engine"
  },
  "countryBlockStartCols": {
   "Ethiopia": "E",

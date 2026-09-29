@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
   "sheet": "Src-Comparators",
   "note": "SETTLED 2026-09-06 — modal procured product per Demand Estimate Model v4 Med Defaults, pending CT validation. Ghana row = carried-over defaults (no Ghana data). Names must match Intervention Library display names exactly (join keys). Applied only when Comparator = 'Current treatment'. Maintenance column = modal current maintenance treatment (oral in ET/NG/RW; depot in SA) — owner decision 2026-09-10, partially superseding the 2026-09-06 modal-per-category settlement; pending CT validation at the Sep 2026 workshops. Consequence to keep in view: against an ORAL Maintenance comparator the LAI admission-RR scenario toggle binds, whereas against a DEPOT comparator it cancelled out of both arms."
  },

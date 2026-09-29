@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
   "sheet": "Control + Var + Setup"
  },
  "params": [
@@ -557,6 +557,26 @@
    "row": 119
   },
   {
+   "paramId": "P_MORT_PRODUCT_LAYERS",
+   "label": "Survival: extra LAI-vs-oral OR and clozapine HR layers",
+   "live": "No",
+   "default": "No",
+   "override": "No",
+   "unit": "switch (Yes/No)",
+   "source": "Owner decision 18 Sep 2026: the LAI register mortality advantage is largely a continuity-of-treatment effect the adherence channel already credits; the product layers are a scenario. P_MORT_CHANNEL (treated-vs-untreated HR) unchanged = Yes.",
+   "row": 120
+  },
+  {
+   "paramId": "P_EML_ONLY",
+   "label": "Include National EML products only?",
+   "live": "No",
+   "default": "No",
+   "override": "No",
+   "unit": "switch (Yes/No)",
+   "source": "Owner review 18 Sep 2026 (web build 11): optional filter — when Yes, only products on the selected country's National EML (Intervention Library J:M) enter the results; Include? still applies.",
+   "row": 121
+  },
+  {
    "paramId": "P_FULLCOST",
    "label": "Medication costing basis",
    "live": "Consumed doses only",
@@ -564,7 +584,7 @@
    "override": "Consumed doses only",
    "unit": "text",
    "source": "Owner decision 2026-09-10. 'Full course (incl. wastage)' = the CEA costs 100% of prescribed units — what procurement actually pays — and Calc-Direct col AH shows the unconsumed share as wastage. 'Consumed doses only' = the standard CEA convention (medication cost scaled by adherence). Single switch point: Calc-Direct col F. Effects are ALWAYS adherence-scaled in both states, so the E=P tier identity (QC A10) is unchanged. The BIA is NOT governed by this parameter — it keeps the demand-model wastage method (P_BIA_ADHERENCE row 104 + P_BIA_WASTAGE row 102). User input: Setup Advanced settings.",
-   "row": 122
+   "row": 124
   },
   {
    "paramId": "P_HOSP_EFFECT",
@@ -574,7 +594,7 @@
    "override": "Yes",
    "unit": "Yes/No",
    "source": "Owner decision 2026-09-11. Treated patients are admitted less often than untreated — class RR 0.43 (0.32–0.57), Ceraso 2020 Cochrane CD008016; product overrides for clozapine / olanzapine / quetiapine on Src-Inpatient Costs rows 49–53. Adherence scales the benefit (Calc-Direct col AJ: 1 − adherence × (1 − RR)). When ON, P_ADM_DIFF (row 48) is forced idle — the LAI admission credit is carried by adherence inside AJ. User input: Setup → Advanced settings.",
-   "row": 125
+   "row": 127
   },
   {
    "paramId": "P_ADM_ANCHOR",
@@ -584,27 +604,7 @@
    "override": "Adjusted for treatment (recommended)",
    "unit": "text",
    "source": "Owner decision 2026-09-11. Comparator-rebased (default): the country's admission % (P_INPT_SCZ_ACUTE) describes patients on the current Initiation+Maintenance treatment; untreated rate = admission % ÷ RR-effective of that comparator (Calc-Direct col AK). Untreated baseline (alternative, conservative): treats the country's admission % as the untreated rate. User input: Setup → Advanced settings.",
-   "row": 126
-  },
-  {
-   "paramId": "P_TF_METHOD",
-   "label": "Transfer-factor method",
-   "live": "Proportional (share of disability)",
-   "default": "Proportional (share of disability)",
-   "override": "Proportional (share of disability)",
-   "unit": "text",
-   "source": "Owner decision 2026-09-11. Proportional (default): Q = k_prop × baseline DW (Src-Transition Factors row 18; 0.284 = 0.181/0.638, Andrews 2003 / Chisholm 2008 WHO-CHOICE equivalent 0.289). Absolute (Andrews literal): Q = the applied 0.181 (Src-Transition Factors col E) — reproduces the pre-change chain. User input: Setup → Advanced settings.",
-   "row": 129
-  },
-  {
-   "paramId": "P_TF_FLOOR",
-   "label": "Cap health gain at the GBD acute–stable gap",
-   "live": "Yes",
-   "default": "Yes",
-   "override": "Yes",
-   "unit": "Yes/No",
-   "source": "Owner decision 2026-09-11. Caps monotherapy improvement at the GBD acute→residual gap (baseline DW − DW_residual 0.588; ET severe 0.190) — a treated patient is never modelled as better than GBD's stable residual state. Binds only for clozapine at defaults (0.197 → 0.190). Salomon 2015 Lancet Glob Health. User input: Setup → Advanced settings. vS 2026-09-14: Setup row hidden (wiring intact via Setup!D29); plain-language: never credits more improvement than the gap between acute and stable schizophrenia (0.19 DW units); affects clozapine only (−3%).",
-   "row": 130
+   "row": 128
   }
  ],
  "cabinetConfig": [
@@ -747,23 +747,23 @@
   "country": "Ethiopia",
   "comparator": "Current treatment",
   "overrides": {
+   "Indicated use": "User Selection",
    "Initiation + Maintenance": null,
    "Maintenance": null,
-   "Treatment-resistant": null,
-   "Acute agitation": null
+   "Treatment-resistant": null
   },
-  "thresholdMethod": "Ochalek (supply-side)",
+  "thresholdMethod": null,
   "customThreshold": null,
-  "includeAdmin": "Yes",
-  "adminPct": 0.12,
-  "currency": "USD",
-  "costing": "Consumed doses only",
-  "hospChannel": "Yes",
-  "anchor": "Adjusted for treatment (recommended)",
-  "tfMethod": "Proportional (share of disability)",
-  "floor": "Yes",
-  "thresholdInEffectText": "Yes"
+  "includeAdmin": "Ochalek (supply-side)",
+  "adminPct": null,
+  "currency": "$261.90 per DALY averted",
+  "costing": "Yes",
+  "hospChannel": 0.12,
+  "anchor": "Consumed doses only",
+  "tfMethod": null,
+  "floor": null,
+  "thresholdInEffectText": null
  },
- "modelVersion": "vS",
- "versionStamp": "vS  ·  September 2026  ·  Clinton Health Access Initiative"
+ "modelVersion": "vS.1",
+ "versionStamp": "vS.1  ·  September 2026  ·  share version 2 (28 Sep)  ·  Clinton Health Access Initiative"
 }

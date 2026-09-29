@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
   "sheet": "Src-Inpatient Costs"
  },
  "byCountryCondition": [
@@ -232,7 +232,7 @@
   {
    "parameter": "Treated-vs-untreated all-cause mortality HR (any antipsychotic)",
    "value": 0.71,
-   "source": "Correll 2022 (most conservative pooled); low FIN20 (Taipale 2020) 0.48; high FIN11 (Tiihonen 2009) 0.81. Range 0.48–0.81. Observational grade — scenario only; base case assigns no mortality benefit (WHO-CHOICE / NICE CG178 / ICER 2024 practice; randomised syntheses null). Added 2026-09-11: when the channel is ON, every treated product receives this credit vs No treatment, in addition to the LAI-vs-oral OR layer above."
+   "source": "Correll 2022 World Psychiatry 21:248 (most conservative pooled); low FIN20 (Taipale 2020 World Psychiatry 19:61) 0.48; high FIN11 (Tiihonen 2009 Lancet 374:620) 0.81. Range 0.48–0.81. Observational grade — scenario only; base case assigns no mortality benefit (WHO-CHOICE / NICE CG178 / ICER 2024 practice; randomised syntheses null). Added 2026-09-11: when the channel is ON, every treated product receives this credit vs No treatment, in addition to the LAI-vs-oral OR layer above."
   },
   {
    "parameter": "Clozapine all-cause mortality HR (product layer)",
@@ -253,21 +253,21 @@
    "rr": 0.43,
    "low": 0.32,
    "high": 0.57,
-   "source": "Ceraso et al. 2020 Cochrane CD008016, hospitalisation RR 0.43 (0.32–0.57), 21 RCTs, high certainty; Leucht 2012 Lancet 0.38 optimistic anchor"
+   "source": "Ceraso et al. 2020 Cochrane CD008016, hospitalisation RR 0.43 (0.32–0.57), 21 RCTs, high certainty; Leucht 2012 Lancet 0.38 optimistic anchor; Kishimoto 2021 Lancet Psychiatry 8:387 (LAI vs oral, three study designs) consistent."
   },
   {
    "bucket": "Clozapine",
    "rr": 0.3,
    "low": 0.2,
    "high": 0.43,
-   "source": "registers 0.51 (Finland, Taipale) / 0.53 (Sweden, Tiihonen 2017) vs non-use; cohort MAs 0.74–0.82 vs other APs; back-solved to register band at oral adherence"
+   "source": "registers 0.51 (Finland, Taipale) / 0.53 (Sweden, Tiihonen 2017 JAMA Psychiatry) vs non-use; cohort MAs 0.74–0.82 vs other APs; back-solved to register band at oral adherence"
   },
   {
    "bucket": "Olanzapine (oral, IM, LAI)",
    "rr": 0.35,
    "low": 0.25,
    "high": 0.45,
-   "source": "Schneider-Thoma 2022 NMA via Jin 2025; NICE CG178 MTC 0.46 ratio; Tiihonen 2011 0.54 vs oral risperidone; shrunk toward class"
+   "source": "Schneider-Thoma 2022 Lancet NMA via Jin 2025; NICE CG178 MTC 0.46 ratio; Tiihonen 2011 Am J Psychiatry 0.54 vs oral risperidone; shrunk toward class"
   },
   {
    "bucket": "Quetiapine",

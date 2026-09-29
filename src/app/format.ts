@@ -120,8 +120,8 @@ export function comparatorsInEffect(s: Scenario, r: AnalysisResult): Record<stri
 
 /** Dashboard display order: cost-effective/dominant first, then current treatment, then SW quadrant, then not cost-effective, then dominated; within a group by engine rank. */
 export function displayRanked(ranked: ProductResult[]): ProductResult[] {
-  const grp = (p: ProductResult) => p.ceStatus === "Dominant (cost-saving)" || p.ceStatus === "Very CE" || p.ceStatus === "CE" ? 0 : p.ceStatus === "Current tx" ? 1 : p.ceStatus === "SW quadrant" ? 2 : p.ceStatus === "Not CE" ? 3 : p.ceStatus === "Dominated" ? 4 : 5;
-  return [...ranked].sort((a, b) => grp(a) - grp(b) || (a.rank ?? 1e9) - (b.rank ?? 1e9));
+  // Since web build 18 the engine's rank already carries the grouped display rule (workbook 4D), so this is a plain sort by rank.
+  return [...ranked].sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9));
 }
 
 export const emlMark = (v: string | null | undefined) => (v === "Yes" ? "✓" : "");

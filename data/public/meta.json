@@ -1,9 +1,9 @@
 {
- "workbook": "MH_CEA_Tool_vS.xlsx",
- "workbook_saved": "2026-09-15T16:19:50",
- "extracted": "2026-09-17T11:38:24",
- "modelVersion": "vS",
- "versionStamp": "vS  ·  September 2026  ·  Clinton Health Access Initiative",
+ "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+ "workbook_saved": "2026-09-29T11:00:36",
+ "extracted": "2026-09-29T11:12:15",
+ "modelVersion": "vS.1",
+ "versionStamp": "vS.1  ·  September 2026  ·  share version 2 (28 Sep)  ·  Clinton Health Access Initiative",
  "changeLogLast": [
   "v31 — UI build ✓",
   "v31 — full-cost build",
@@ -19,6 +19,6 @@
  "publicBuild": {
   "disclosure": "label-only",
   "label": "Public version",
-  "built": "2026-09-28"
+  "built": "2026-09-29"
  }
 }

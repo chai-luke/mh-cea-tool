@@ -1,10 +1,9 @@
 {
  "_meta": {
-  "workbook": "MH_CEA_Tool_vS.xlsx",
-  "workbook_saved": "2026-09-15T16:19:50",
-  "extracted": "2026-09-17T11:38:24",
-  "sheet": "Intervention Library",
-  "useCategoryAlignment": "17 Sep 2026: SCZ-15 -> Maintenance; SCZ-11 rrBucket -> class default (tools/apply_use_category_alignment_2026-09-17.py)"
+  "workbook": "MH CEA Tool_vS1_2026-09-29.xlsx",
+  "workbook_saved": "2026-09-29T11:00:36",
+  "extracted": "2026-09-29T11:12:15",
+  "sheet": "Intervention Library"
  },
  "interventions": [
   {
@@ -26,7 +25,8 @@
    "emlCrosscheck": "Foundational FGA on all 5 lists. WHO 23rd EML core; Sect 22 NEML Nigeria; SA Adult Hospital STG; Ethiopia EML 2024; Rwanda STG 2022.",
    "source": "WHO EML 2023; Nigeria NEML 2020 (7th ed)",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-02",
@@ -47,7 +47,8 @@
    "emlCrosscheck": "Foundational FGA on all 5 lists. WHO 23rd EML core; Sect 22 NEML Nigeria; SA STG (rapid tranq alternative); Ethiopia EML; Rwanda STG.",
    "source": "WHO EML 2023; SA AHL STG 2024",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-03",
@@ -68,7 +69,8 @@
    "emlCrosscheck": "WHO 23rd EML core (added 2013). On SA EML, Ethiopia EML, Nigeria NEML 2020 (0.5/2/4 mg tabs), Rwanda STG (2-8 mg/day).",
    "source": "WHO EML 2023; Nigeria NEML 2020",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-04",
@@ -89,7 +91,8 @@
    "emlCrosscheck": "WHO 23rd EML core (added 2023 as therapeutic alternative under risperidone square box). SA EML; Rwanda STG (5-20 mg/day). Not on Ethiopia 7th EML or Nigeria NEML 2020 (predates 23rd revision).",
    "source": "WHO EML 23rd 2023; Rwanda STG 2022",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-05",
@@ -110,7 +113,8 @@
    "emlCrosscheck": "WHO 23rd EML core (added 2023 as therapeutic alternative). SA EML hospital level; Rwanda STG (50-750 mg/day). Not on Ethiopia/Nigeria current EMLs.",
    "source": "WHO EML 23rd 2023; Rwanda STG 2022",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-06",
@@ -131,7 +135,8 @@
    "emlCrosscheck": "WHO 23rd EML complementary list (treatment-resistant only). SA EML; Ethiopia EML (limited public availability per Addis Ababa survey). Not on Nigeria NEML 2020 or Rwanda NEML.",
    "source": "WHO EML 2023; Ethiopia EML 2024",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-07",
@@ -152,7 +157,8 @@
    "emlCrosscheck": "Not on WHO 23rd EML (fluphenazine LAI is the listed FGA LAI). On SA EML — most-used FGA LAI in SSA per literature. Not registered in Ethiopia/Nigeria/Rwanda EMLs.",
    "source": "SA AHL STG 2024; SAHR 2024 procurement review",
    "panelRecommended": "Not appraised",
-   "adminPerYr": 12
+   "adminPerYr": 12,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-08",
@@ -173,7 +179,8 @@
    "emlCrosscheck": "WHO 23rd EML — listed as square-box therapeutic alternative under paliperidone palmitate 1-month LAI. NOT on any of 4 country EMLs — high cost, generally tertiary/private only.",
    "source": "WHO EML 23rd 2023 (square-box alternative under paliperidone LAI)",
    "panelRecommended": "Yes",
-   "adminPerYr": 26
+   "adminPerYr": 26,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-09",
@@ -194,7 +201,8 @@
    "emlCrosscheck": "WHO 23rd EML core (1-month LAI added 2023). NOT on any of 4 country EMLs — high cost. Ethiopia literature confirms 'no registered SGA long-acting antipsychotic'.",
    "source": "WHO EML 23rd 2023; RMHP Ethiopia 2023",
    "panelRecommended": "Yes",
-   "adminPerYr": 12
+   "adminPerYr": 12,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-10",
@@ -215,7 +223,8 @@
    "emlCrosscheck": "Novel M1/M4 muscarinic agonist (FDA approved 2024). NOT on WHO EML or any national EML. Very high acquisition cost; not yet registered in Africa.",
    "source": "FDA 2024 approval; not in any EML reviewed",
    "panelRecommended": "No",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-11",
@@ -258,7 +267,8 @@
    "emlCrosscheck": "Not on WHO EML (paliperidone & risperidone LAIs are the listed SGA LAIs). Not on any national EML reviewed.",
    "source": "Not in any EML reviewed",
    "panelRecommended": "Yes",
-   "adminPerYr": 26
+   "adminPerYr": 12,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-13",
@@ -279,7 +289,8 @@
    "emlCrosscheck": "WHO 23rd EML core (added 2023 as therapeutic alternative). SA EML — restricted to tertiary/quaternary care for cost containment. Not on Ethiopia/Nigeria/Rwanda EMLs.",
    "source": "WHO EML 23rd 2023; SA AHL STG 2024",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-14",
@@ -300,7 +311,8 @@
    "emlCrosscheck": "Acute IM aripiprazole NOT on WHO EML (only oral aripiprazole is listed). Not on any national EML reviewed.",
    "source": "Not in any EML reviewed",
    "panelRecommended": "Yes",
-   "adminPerYr": 20
+   "adminPerYr": 20,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-15",
@@ -321,7 +333,8 @@
    "emlCrosscheck": "Not on WHO EML (paliperidone & risperidone LAIs are the listed SGA LAIs). Not on any national EML reviewed.",
    "source": "Not in any EML reviewed",
    "panelRecommended": "Yes",
-   "adminPerYr": 12
+   "adminPerYr": 12,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-16",
@@ -342,7 +355,8 @@
    "emlCrosscheck": "Not on WHO EML or any national EML reviewed. Patent-protected, high cost.",
    "source": "Not in any EML reviewed",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-17",
@@ -363,7 +377,8 @@
    "emlCrosscheck": "Not on WHO EML or any national EML reviewed.",
    "source": "Not in any EML reviewed",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-18",
@@ -384,7 +399,8 @@
    "emlCrosscheck": "Novel SGA (FDA 2019). Not on WHO EML or any national EML.",
    "source": "Not in any EML reviewed",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-19",
@@ -405,7 +421,8 @@
    "emlCrosscheck": "Not on WHO EML. On SA EML — restricted to tertiary/quaternary care. Not on Ethiopia/Nigeria/Rwanda EMLs.",
    "source": "SA AHL STG 2024",
    "panelRecommended": "Yes",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-20",
@@ -426,7 +443,8 @@
    "emlCrosscheck": "WHO 23rd EML — listed as square-box therapeutic alternative under fluphenazine decanoate LAI (alongside haloperidol decanoate). On SA EML as alternative FGA LAI. Not on Ethiopia/Nigeria/Rwanda EMLs.",
    "source": "WHO EML 23rd 2023 (square-box alternative under fluphenazine LAI); SA AHL STG 2024",
    "panelRecommended": "Not appraised",
-   "adminPerYr": 12
+   "adminPerYr": 12,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-21",
@@ -447,7 +465,8 @@
    "emlCrosscheck": "WHO 23rd EML: fluphenazine decanoate is THE listed FGA LAI (haloperidol decanoate and zuclopenthixol decanoate are square-box alternatives under it). Procured at scale in Nigeria but not NEML-listed; not on SA/ETH/RWA EMLs reviewed.",
    "source": "WHO EML 2023; Demand Estimate Model v4 Med Defaults",
    "panelRecommended": "Yes",
-   "adminPerYr": 12
+   "adminPerYr": 12,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-22",
@@ -468,7 +487,8 @@
    "emlCrosscheck": "Oral and decanoate haloperidol are WHO EML-listed; the short-acting IM is not. ETH Yes per STG emergency phase; not separately listed on SA/NGA/RWA EMLs reviewed.",
    "source": "ETH STG (emergency phase); Demand Estimate Model v4",
    "panelRecommended": "Yes",
-   "adminPerYr": 20
+   "adminPerYr": 20,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-23",
@@ -489,7 +509,8 @@
    "emlCrosscheck": "Not on WHO 23rd EML. SA: procured, STG presence limited (note). Not on ETH/NGA/RWA EMLs reviewed.",
    "source": "Demand Estimate Model v4 Med Defaults; WHO DDD",
    "panelRecommended": "n/a — outside consensus scope",
-   "adminPerYr": null
+   "adminPerYr": null,
+   "rrBucket": null
   },
   {
    "intId": "SCZ-24",
@@ -510,7 +531,8 @@
    "emlCrosscheck": "WHO 23rd EML: square-box therapeutic alternative under fluphenazine decanoate. RWA STG: decanoate 50–200mg/month. Not on SA/ETH/NGA EMLs reviewed.",
    "source": "WHO EML 2023 (square-box under fluphenazine dec.); RWA STG 2022",
    "panelRecommended": "Yes",
-   "adminPerYr": 12
+   "adminPerYr": 12,
+   "rrBucket": null
   }
  ]
 }
